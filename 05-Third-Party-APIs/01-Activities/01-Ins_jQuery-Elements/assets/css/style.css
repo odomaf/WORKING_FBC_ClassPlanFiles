@@ -1,0 +1,30 @@
+.fancy {
+  font-size: 48px;
+  color: rgb(122, 242, 242);
+  background: #000;
+  border-radius: 1rem;
+  width: 360px;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  border: 4px solid rgb(122, 242, 242);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto;
+  width: 320px;
+  text-align: left;
+}
+
+.item {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(122, 242, 242, 0.3);
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.item.is-active {
+  background: rgba(122, 242, 242, 0.2);
+  outline: 2px solid rgb(122, 242, 242);
+}

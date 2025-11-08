@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Traversal — Tic-Tac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body class="bg-dark text-light">
+    <main id="root">
+      <h1>Tic-Tac-Toe</h1>
+      <p>All traversals must start from <code>#root</code>.</p>
+      <hr />
+
+      <!-- Row 1: X X _  (block X by placing O in the 3rd cell) -->
+      <ul class="row">
+        <li class="tile">X</li>
+        <li class="tile">X</li>
+        <li class="tile"></li>
+      </ul>
+
+      <!-- Row 2: O X _ -->
+      <ul class="row">
+        <li class="tile">O</li>
+        <li class="tile">X</li>
+        <li class="tile"></li>
+      </ul>
+
+      <!-- Row 3: _ O _  (then make O win by filling right column) -->
+      <ul class="row">
+        <li class="tile"></li>
+        <li class="tile">O</li>
+        <li class="tile"></li>
+      </ul>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

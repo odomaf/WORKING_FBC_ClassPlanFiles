@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #eff5f8;
+  --card: #f0ead6;
+  --ink: #0b2533;
+  --accent: #093145;
+  --danger: #f64900;
+  --muted: #7a8894;
+  --focus: #7bd389;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.wrapper {
+  padding: 24px 12px;
+}
+
+.container {
+  width: min(760px, 92vw);
+  margin: 48px auto;
+  text-align: center;
+  font-size: 1rem;
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  padding: 28px 20px 36px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+h2 {
+  margin: 10px 0 24px;
+  font-weight: 600;
+}
+#counter {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-right: 6px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+button {
+  border: 0;
+  padding: 14px 18px;
+  font-size: 1.05rem;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 4px var(--focus), 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#add {
+  background: var(--accent);
+}
+#subtract {
+  background: var(--danger);
+}
+#reset {
+  background: #64748b;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.hint {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}

@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #eff5f8;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+h4 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+button {
+  padding: 10px 16px;
+  margin: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #247ba0;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: #1a5b7a;
+}
+.container {
+  margin: 80px auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 60vw;
+  max-width: 500px;
+  background-color: #f0ead6;
+  border-radius: 10px;
+}
+.wrapper {
+  padding-top: 20px;
+}
+.card-contents {
+  padding: 10px 5px 20px 5px;
+}

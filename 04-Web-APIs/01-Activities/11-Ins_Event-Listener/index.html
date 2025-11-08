@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event Listener — Dark & Light Mode</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <div class="container dark">
+    <nav class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
+    <section class="toggle row">
+      <div class="col"><p>DARK MODE</p></div>
+
+      <label class="switch col">
+        <input type="checkbox" id="theme-switcher" />
+        <span class="slider round"></span>
+      </label>
+
+      <div class="col"><p>LIGHT MODE</p></div>
+    </section>
+
+    <section class="row">
+      <h2>Adding an Event Listener</h2>
+    </section>
+
+    <section class="row info">
+      <p>We use the <code>.addEventListener()</code> method to listen for user events such as clicks, hovers, or keypresses.</p>
+      <p id="light-mode">Switching to <strong>Light Mode</strong> applies a brighter background and text color.</p>
+      <p id="dark-mode">Switching back to <strong>Dark Mode</strong> restores a dark theme for easier nighttime viewing.</p>
+    </section>
+
+    <footer class="footer">
+      <ul>
+        <li><a href="#home">Terms of Use</a></li>
+        <li><a href="#gallery">Privacy Policy</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <!-- Script last (no defer) -->
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

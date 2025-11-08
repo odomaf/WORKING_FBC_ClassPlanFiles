@@ -1,0 +1,80 @@
+/* 26-Stu_DayJS-Format
+   Simple, focused styling. Students concentrate on Day.js logic.
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Nanum Gothic", system-ui, sans-serif;
+  background-color: #101820;
+  color: #f5f5f5;
+}
+
+.jumbotron {
+  padding: 3rem 1.5rem 2.5rem;
+  background: linear-gradient(135deg, #00bcd4, #3f51b5);
+  text-align: center;
+}
+
+.title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.jumbotron p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.qa-block {
+  margin-bottom: 1.75rem;
+}
+
+.question {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.question code {
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+.answer {
+  margin: 0;
+  padding-left: 0.75rem;
+  border-left: 3px solid #00bcd4;
+  color: #80deea;
+  font-size: 1.05rem;
+}
+
+/* Small screens */
+@media (max-width: 575.98px) {
+  .jumbotron {
+    padding: 2.25rem 1rem 2rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .content {
+    padding: 2rem 1rem 2.5rem;
+  }
+}

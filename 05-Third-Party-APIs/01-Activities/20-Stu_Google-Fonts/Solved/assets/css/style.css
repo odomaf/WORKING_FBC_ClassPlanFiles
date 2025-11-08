@@ -1,0 +1,87 @@
+:root {
+  --brown: #a88f82;
+  --tan: #f5e1d5;
+  --teal: #2f7f80;
+  --lightteal: #d5f5f5;
+  --light: #fffaf7;
+  --text-main: #2a2a2a;
+}
+
+::selection {
+  color: var(--brown);
+  background-color: var(--light);
+}
+
+/* ✅ Applied Google Fonts */
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-main);
+  background-color: var(--light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color: var(--teal);
+}
+
+.custom-navbar .nav-link {
+  color: var(--lightteal);
+}
+
+.custom-navbar .nav-link:hover {
+  color: var(--light);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--lightteal);
+  color: var(--teal);
+}
+
+.hero-title {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+}
+
+/* Button */
+.custom-btn {
+  background-color: var(--brown);
+  color: var(--light);
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.custom-btn:hover {
+  background-color: var(--tan);
+  color: var(--brown);
+}
+
+/* Guestbook Cards */
+.custom-card {
+  border-color: var(--teal);
+  color: var(--brown);
+  border-radius: 1rem;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+.custom-card-header {
+  background-color: var(--teal);
+  color: var(--lightteal);
+  font-weight: 600;
+}

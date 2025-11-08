@@ -1,0 +1,57 @@
+/* =========================================================
+   21-Ins_jQuery-UI-Widgets
+   - Demonstrates using jQuery UI's Dialog widget
+   - Styled with Bootstrap + custom typography
+   ========================================================= */
+
+body {
+  font-family: "Titillium Web", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Center headings by default for this demo */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Subheading style */
+.byline {
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  color: #666;
+}
+
+/* Simple hero gradient */
+.bg-gradient {
+  background: linear-gradient(135deg, #0d6efd, #20c997);
+}
+
+/* Dialog content tweaks */
+#demo-dialog {
+  font-size: 0.98rem;
+}
+
+/* jQuery UI overrides to match Bootstrap-ish feel */
+.ui-dialog-titlebar {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border: none;
+}
+
+.ui-dialog-titlebar-close {
+  border: none;
+}
+
+.ui-dialog-content {
+  padding-top: 0.5rem;
+}

@@ -1,0 +1,36 @@
+/* TODO: Define your own custom color variables here */
+:root {
+  --primary: #71a8a7;
+  --secondary: #a88f82;
+  --accent: #f5e1d5;
+  --light: #fffaf7;
+}
+
+/* TODO: Add your custom navbar background and link colors */
+.custom-navbar {
+  /* Example: background-color: var(--primary); */
+}
+
+/* TODO: Style the hero section with a unique background and text color */
+.hero {
+  /* Example: background-color: var(--accent); */
+}
+
+/* TODO: Style your custom button */
+.custom-btn {
+  /* Example: background-color: var(--secondary); color: var(--light); */
+}
+
+/* TODO: Style the guest cards and card headers */
+.custom-card {
+  /* Example: border-color: var(--primary); */
+}
+
+.custom-card-header {
+  /* Example: background-color: var(--primary); color: var(--light); */
+}
+
+/* Optional: Custom selection or hover effects */
+::selection {
+  /* Example: background: var(--accent); color: var(--secondary); */
+}

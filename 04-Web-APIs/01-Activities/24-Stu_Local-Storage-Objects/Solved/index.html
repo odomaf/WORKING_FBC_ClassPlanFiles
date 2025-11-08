@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Book — Save Object to localStorage</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Add a Contact</h2>
+
+      <form id="contact-form" novalidate>
+        <ul>
+          <li class="input-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Jane" />
+          </li>
+
+          <li class="input-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Doe" />
+          </li>
+
+          <li class="input-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="janedoe@mail.com" />
+          </li>
+        </ul>
+
+        <div class="actions">
+          <button id="save" type="submit">Save Contact</button>
+          <button id="delete-last" type="button" class="secondary">Delete Last</button>
+          <button id="clear-all" type="button" class="danger">Clear All</button>
+        </div>
+        <div id="msg" role="alert" aria-live="polite"></div>
+      </form>
+
+      <h3>Contacts (Most Recent First)</h3>
+      <div class="scroll">
+        <table class="table" aria-describedby="msg">
+          <thead>
+            <tr>
+              <th>First</th>
+              <th>Last</th>
+              <th>Email</th>
+              <th>Saved</th>
+            </tr>
+          </thead>
+          <tbody id="contacts-body">
+            <!-- rows inserted by script.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

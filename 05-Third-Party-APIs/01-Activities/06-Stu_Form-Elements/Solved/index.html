@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>06-Ins — jQuery Shopping List (SOLVED)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body class="bg-dark text-light">
+    <main class="my-5 mx-auto">
+      <h1>Shopping List</h1>
+      <hr />
+      <h2>Add an item to the list.</h2>
+
+      <form id="shopping-form">
+        <input
+          type="text"
+          class="form-input w-100"
+          id="shopping-input"
+          name="shopping-input"
+          placeholder="Enter item name"
+          autocomplete="off"
+        />
+        <button class="btn btn-info" type="submit">Add Item</button>
+      </form>
+
+      <ul id="shopping-list" aria-live="polite"></ul>
+    </main>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- App script -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

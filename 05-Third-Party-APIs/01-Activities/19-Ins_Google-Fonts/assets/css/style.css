@@ -1,0 +1,97 @@
+/*
+  Google Fonts + Bootstrap Demo
+  -----------------------------
+  This stylesheet adds a clean, modern look on top of Bootstrap
+  using the "Titillium Web" font (linked in index.html).
+
+  Goals:
+  - Use a custom font consistently
+  - Slightly soften Bootstrap's defaults
+  - Keep everything readable and minimal
+*/
+
+/* ---------- Theme Variables ---------- */
+
+:root {
+  --color-bg: #f5f5f7; /* Page background */
+  --color-header-bg: #111827; /* Dark header background */
+  --color-text-main: #111827; /* Primary text */
+  --color-text-muted: #6b7280; /* Muted/byline text */
+  --color-accent: #38bdf8; /* Accent (lines, highlights) */
+}
+
+/* ---------- Base Typography ---------- */
+
+body {
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+}
+
+/* Bold, crisp headings using our custom font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraphs: relaxed line-height for readability */
+p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* Byline style: light + italic + muted color */
+.byline {
+  font-weight: 200;
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+/* ---------- Header Styling ---------- */
+
+/* Override Bootstrap's .bg-dark + .text-light combo for this demo */
+.bg-dark.text-light {
+  background-color: var(--color-header-bg) !important;
+  color: #f9fafb !important;
+}
+
+/* Make the main heading responsive and centered nicely */
+.bg-dark .container h1 {
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ---------- Content Layout ---------- */
+
+/* Slightly constrain content width for better readability */
+.container {
+  max-width: 800px;
+}
+
+/* Add a subtle accent underline to h2 elements */
+h2 {
+  position: relative;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-accent);
+  border-radius: 999px;
+}

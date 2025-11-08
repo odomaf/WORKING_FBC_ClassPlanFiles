@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Event Prevent Default Demo</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="card-contents">
+          <h1>Contact Page</h1>
+
+          <form id="contact-form">
+            <input type="text" placeholder="Name" id="name" required />
+            <input type="email" placeholder="Email" id="email" required />
+            <button id="submit">Submit</button>
+
+            <div>
+              <h3 id="response" aria-live="polite"></h3>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

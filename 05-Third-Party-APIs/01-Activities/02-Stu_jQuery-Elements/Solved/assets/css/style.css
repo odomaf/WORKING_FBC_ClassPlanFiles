@@ -1,0 +1,27 @@
+.fancy {
+  font-size: 35px;
+  color: rgb(48, 218, 236);
+  width: 98%;
+  font-style: italic;
+  margin: 0 auto 0.75rem auto;
+}
+
+.plain {
+  font-size: 25px;
+  color: rgb(207, 210, 211);
+  font-style: italic;
+}
+
+/* small utilities to match your course look */
+.bg-dark {
+  background: #1a1a1a;
+}
+.text-light {
+  color: #d9e9e8;
+}
+.text-center {
+  text-align: center;
+}
+.m-5 {
+  margin: 1.625rem;
+}

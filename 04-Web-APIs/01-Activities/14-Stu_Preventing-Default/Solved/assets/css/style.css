@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #eff5f8;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+.container {
+  margin: 60px auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 60vw;
+  max-width: 640px;
+  background-color: #f0ead6;
+  border-radius: 10px;
+  padding: 20px;
+}
+h1 {
+  margin: 10px 0;
+}
+h3 {
+  margin: 0 0 10px 0;
+}
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 20px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f7f7f7;
+}
+input:focus {
+  outline: none;
+  border-color: #247ba0;
+}
+button {
+  padding: 10px 20px;
+  margin: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #247ba0;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: #1a5b7a;
+}
+.tip-area {
+  padding-bottom: 20px;
+}

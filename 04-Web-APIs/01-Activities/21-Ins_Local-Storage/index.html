@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coding Time Tracker</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container" role="region" aria-labelledby="title">
+        <h1 id="title">Coding Time Tracker</h1>
+        <h2>
+          <span id="counter" aria-live="polite" aria-atomic="true">0</span>
+          Hours Spent Coding Today
+        </h2>
+
+        <div class="controls">
+          <button id="subtract" type="button" aria-label="Decrease hours">
+            Decrement
+          </button>
+          <button id="add" type="button" aria-label="Increase hours">
+            Increment
+          </button>
+          <button id="reset" type="button" aria-label="Reset hours to zero">
+            Reset
+          </button>
+        </div>
+
+        <p class="hint">
+          This number is saved in <code>localStorage</code>, so it persists when
+          you refresh.
+        </p>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background-color: #0b3d59;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px auto 20px auto;
+  letter-spacing: 0.1em;
+  color: whitesmoke;
+}
+
+.img-container {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img-container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+img {
+  display: inline-block;
+  width: 45%;
+  height: 260px;
+  margin: 1.5%;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.9);
+}

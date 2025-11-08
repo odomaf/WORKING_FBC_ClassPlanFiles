@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Keyboard Events — Font Checker</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Font Checker</h1>
+      <p>Select a typeface and start typing below to see live updates.</p>
+
+      <form id="font-form">
+        <label for="typeface" class="visually-hidden">Choose a font</label>
+        <select id="typeface">
+          <option value="serif">Serif</option>
+          <option value="monospace">Monospace</option>
+        </select>
+
+        <div style="margin-top: 40px">
+          <textarea
+            id="textarea"
+            placeholder="Start typing here..."
+            aria-label="Text input area"
+          ></textarea>
+
+          <div>
+            <button id="clear" type="button">Clear</button>
+          </div>
+        </div>
+      </form>
+
+      <section class="elements">
+        <h1 id="h1"></h1>
+        <h2 id="h2"></h2>
+        <h3 id="h3"></h3>
+        <p id="p"></p>
+      </section>
+    </div>
+
+    <!-- Script last -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

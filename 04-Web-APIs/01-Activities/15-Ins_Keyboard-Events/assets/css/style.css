@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #eff5f8;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+.container {
+  margin: 80px auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 60vw;
+  max-width: 640px;
+  background-color: #f0ead6;
+  border-radius: 10px;
+  padding: 20px;
+}
+button {
+  padding: 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #247ba0;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: #1a5b7a;
+}
+textarea,
+select {
+  font-size: 20px;
+  width: 60%;
+  height: 50px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+}
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #247ba0;
+}
+.elements h1,
+.elements h2,
+.elements h3,
+.elements p {
+  margin: 10px 0;
+}
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

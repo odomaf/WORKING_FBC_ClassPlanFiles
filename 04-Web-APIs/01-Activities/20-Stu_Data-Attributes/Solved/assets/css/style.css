@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0b3d59;
+  --tile: #093145;
+  --tile-hover: #0f476d;
+  --text: #f8fafc;
+  --accent: #7bd389;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #0a2f44 60%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin: 28px 12px;
+  letter-spacing: 0.06em;
+}
+
+.container {
+  width: min(1000px, 92vw);
+  margin: 0 auto 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.box {
+  display: grid;
+  place-items: center;
+  height: 180px;
+  border-radius: 14px;
+  background: var(--tile);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  font-size: 96px;
+  color: var(--text);
+  user-select: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease,
+    box-shadow 0.15s ease;
+  outline: none;
+}
+
+.box:hover {
+  background: var(--tile-hover);
+  transform: translateY(-2px);
+}
+.box:active {
+  transform: translateY(0);
+}
+
+.box:focus-visible {
+  box-shadow: 0 0 0 4px var(--accent), 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Smaller screens */
+@media (max-width: 740px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box {
+    height: 150px;
+    font-size: 72px;
+  }
+}

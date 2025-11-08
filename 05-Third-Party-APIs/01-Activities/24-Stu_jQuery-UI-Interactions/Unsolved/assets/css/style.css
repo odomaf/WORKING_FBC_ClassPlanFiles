@@ -1,0 +1,36 @@
+/* 24-Stu_jQuery-UI-Interactions
+   Starter styles — focus is on implementing sortable + placeholder.
+*/
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Center the list area a bit */
+.sortable-list {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* TODO:
+   You'll configure the placeholder class in script.js.
+   We've added a style for it here so you can see it clearly once it's working.
+*/
+.ui-state-highlight {
+  height: 2.4rem;
+  background-color: #e3f2fd;
+  border: 2px dashed #42a5f5;
+}

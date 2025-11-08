@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>04-Ins — jQuery Click Events (SOLVED)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body class="bg-dark text-light">
+    <main>
+      <h1>Password Generator</h1>
+      <h2>Single-click the button to generate a 15-character password.</h2>
+      <hr />
+
+      <pre
+        class="text-dark bg-light p-5"
+        id="password-display"
+        aria-live="polite"
+      >
+Password will go here...
+      </pre>
+
+      <div class="stack">
+        <button id="password-btn" class="btn btn-block btn-info">
+          Generate Password
+        </button>
+        <!-- Bonus: Copy -->
+        <button id="copy-btn" class="btn btn-block btn-light">
+          Copy to Clipboard
+        </button>
+      </div>
+
+      <p
+        id="copy-status"
+        class="visually-hidden"
+        role="status"
+        aria-live="polite"
+      ></p>
+    </main>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- App script -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

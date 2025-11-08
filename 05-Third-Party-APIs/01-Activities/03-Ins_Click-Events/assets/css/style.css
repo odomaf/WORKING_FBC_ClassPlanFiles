@@ -1,0 +1,76 @@
+/* Layout */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+main {
+  margin: 3rem auto;
+  max-width: 90vw;
+  width: 50ch;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin: 0 0 0.5rem;
+}
+
+p {
+  margin: 1rem 0 0.5rem;
+}
+
+/* Theme */
+.theme-dark {
+  background-color: #1a1a1a;
+  color: #d9e9e8;
+}
+
+.theme-light {
+  background-color: #d9e9e8;
+  color: #1a1a1a;
+}
+
+/* Lottery number styling + tiny feedback */
+#lottery-number {
+  font-size: 2rem;
+  margin-left: 0.75rem;
+}
+.flash {
+  outline: 2px solid currentColor;
+}
+
+/* Simple button system to match earlier weeks */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  transition: transform 80ms ease, filter 120ms ease;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn:hover {
+  filter: brightness(1.05);
+}
+
+/* Button variants */
+.btn-danger {
+  background: #e64c66;
+  color: #fff;
+}
+.btn-info {
+  background: #1bbc9b;
+  color: #fff;
+}
+.btn-primary {
+  background: #2d3e50;
+  color: #d9e9e8;
+}
+.btn-warning {
+  background: #f0ad4e;
+  color: #1a1a1a;
+}

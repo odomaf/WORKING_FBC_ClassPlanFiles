@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Profile Sign-Up — localStorage Demo</title>
+  </head>
+
+  <body>
+    <main class="clearfix">
+      <section class="card">
+        <h2>Create Profile</h2>
+        <form id="signup-form" method="POST" novalidate>
+          <div class="input-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Jane Doe"
+            />
+          </div>
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="janedoe42"
+            />
+          </div>
+          <div id="msg" role="alert" aria-live="polite"></div>
+          <button id="sign-up" type="submit">Save Profile</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Last Registered User:</h2>
+        <p><strong>Name:</strong> <span id="user-name">(none yet)</span></p>
+        <p><strong>Username:</strong> <span id="user-username">(none yet)</span></p>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>

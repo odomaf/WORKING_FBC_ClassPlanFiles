@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>jQuery UI Interactions — Sortable (Ins)</title>
+
+    <!-- jQuery UI CSS -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+
+    <!-- Google Font: Titillium Web -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="page-hero">
+      <div class="container">
+        <h1>jQuery UI Interactions — Sortable</h1>
+        <p class="byline">
+          Drag and drop to reorder the topics you're most excited to learn.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="sortable-section">
+        <h2>What are you most excited to learn more about?</h2>
+        <p class="hint">Try dragging items up or down to reorder your list.</p>
+
+        <!-- Sortable list -->
+        <ul id="sortable" class="sortable-list">
+          <!-- In class, you can ask students for suggestions and edit this list live -->
+          <li class="ui-state-default">
+            <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>JavaScript
+          </li>
+          <li class="ui-state-default">
+            <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>HTML
+          </li>
+          <li class="ui-state-default">
+            <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>CSS
+          </li>
+          <li class="ui-state-default">
+            <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Node.js
+          </li>
+          <li class="ui-state-default">
+            <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Express.js
+          </li>
+          <li class="ui-state-default">
+            <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>PostgreSQL
+          </li>
+          <li class="ui-state-default">
+            <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>React
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Scripts at bottom -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

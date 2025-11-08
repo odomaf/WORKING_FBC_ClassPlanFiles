@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #eff5f8;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0.5em 0;
+}
+
+button {
+  background-color: #001b44;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1em;
+  padding: 14px 36px;
+  margin-top: 0.8em;
+  float: right;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #00306e;
+}
+
+.input-group {
+  margin: 14px 0;
+}
+
+label {
+  color: #212121;
+  font-weight: 600;
+  display: block;
+}
+
+input {
+  background-color: #f1f3f4;
+  border-radius: 4px;
+  border: none;
+  font-size: 1em;
+  height: 45px;
+  padding: 8px;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+input:hover,
+input:focus {
+  background-color: #e8eaed;
+  outline: none;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #eceff1;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 1px 4px 1px;
+  margin: 2%;
+  margin-top: 60px;
+  padding: 24px;
+  width: 46%;
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#msg {
+  visibility: hidden;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 1em;
+  height: 1.2em;
+}
+
+#msg.success,
+#msg.error {
+  visibility: visible;
+}
+
+#msg.success {
+  color: #007b5e;
+}
+
+#msg.error {
+  color: #e6252c;
+}

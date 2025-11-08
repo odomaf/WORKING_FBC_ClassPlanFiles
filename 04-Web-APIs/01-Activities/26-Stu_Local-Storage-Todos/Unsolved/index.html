@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Roster — localStorage Practice</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <!-- Form Card -->
+      <section class="card">
+        <h2>Add a Grade</h2>
+
+        <form id="grade-form" novalidate>
+          <ul class="stack">
+            <li class="input-group">
+              <label for="student-names">Student Name</label>
+              <select id="student-names">
+                <option value="Avery">Avery</option>
+                <option value="Diego">Diego</option>
+                <option value="Leilani">Leilani</option>
+                <option value="Noah">Noah</option>
+                <option value="Priya">Priya</option>
+                <option value="Sora">Sora</option>
+              </select>
+            </li>
+
+            <li class="input-group">
+              <label for="grades">Grade</label>
+              <select id="grades">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="Incomplete">Incomplete</option>
+              </select>
+            </li>
+
+            <li class="input-group">
+              <label for="msg">Comment</label>
+              <textarea
+                id="msg"
+                name="comments"
+                placeholder="Optional note…"
+              ></textarea>
+            </li>
+          </ul>
+
+          <div class="actions">
+            <button id="save" type="submit">Save</button>
+            <button id="delete-last" type="button" class="secondary">
+              Delete Last
+            </button>
+            <button id="clear-all" type="button" class="danger">
+              Clear All
+            </button>
+          </div>
+
+          <div id="flash" role="alert" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <!-- Last Saved Card -->
+      <section class="card">
+        <h2>Last Saved Grade</h2>
+        <p>Student: <strong id="saved-name">—</strong></p>
+        <p>Grade: <strong id="saved-grade">—</strong></p>
+        <p>Comment: <span id="saved-comment">—</span></p>
+        <p>Saved: <span id="saved-when">—</span></p>
+      </section>
+
+      <!-- Roster Table -->
+      <section class="card full">
+        <h2>Roster (Most Recent First)</h2>
+        <div class="scroll">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Student</th>
+                <th>Grade</th>
+                <th>Comment</th>
+                <th>Saved</th>
+              </tr>
+            </thead>
+            <tbody id="roster-body">
+              <!-- rows inserted by script -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

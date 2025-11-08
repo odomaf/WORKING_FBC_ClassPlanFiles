@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradebook</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Enter a Grade</h2>
+
+      <form id="grade-form" novalidate>
+        <ul>
+          <li>
+            <label for="student-names">Student Name</label>
+            <select id="student-names" name="student">
+              <option value="Maya">Maya</option>
+              <option value="Alex">Alex</option>
+              <option value="Sojung">Sojung</option>
+              <option value="Tomas">Tomas</option>
+            </select>
+          </li>
+
+          <li>
+            <label for="grades">Grade</label>
+            <select id="grades" name="grade">
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="Incomplete">Incomplete</option>
+            </select>
+          </li>
+
+          <li>
+            <label for="msg">Comment</label>
+            <textarea id="msg" name="comments" placeholder="Optional note…"></textarea>
+          </li>
+        </ul>
+
+        <div class="actions">
+          <button id="save" type="submit">Save</button>
+          <button id="delete-last" type="button" class="secondary">Delete Last</button>
+          <button id="clear-all" type="button" class="danger">Clear All</button>
+        </div>
+      </form>
+
+      <h3 class="message" id="flash" role="alert" aria-live="polite"></h3>
+
+      <h3>Recent Entries</h3>
+      <div class="scroll">
+        <table class="grades-table" aria-describedby="flash">
+          <thead>
+            <tr>
+              <th>Student</th>
+              <th>Grade</th>
+              <th>Comment</th>
+              <th>Saved</th>
+            </tr>
+          </thead>
+          <tbody id="grades-body">
+            <!-- rows injected by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

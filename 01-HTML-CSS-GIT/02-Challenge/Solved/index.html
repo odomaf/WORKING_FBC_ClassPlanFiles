@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WanderNote — Travel Journal</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Top navigation: div -> header + nav, preserve classes/IDs -->
+    <header id="topbar" role="banner">
+      <div class="logo">WanderNote</div>
+      <nav class="links" aria-label="Primary">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">Destinations</a>
+        <a class="nav-link" href="#">Tips</a>
+        <a class="nav-link" href="#">About</a>
+      </nav>
+    </header>
+
+    <!-- Hero: div -> section, keep inner divs for layout -->
+    <section id="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <img
+          class="hero-img"
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop"
+          alt="Traveler overlooking mountains"
+        />
+        <h1 id="hero-title" class="headline">Stories from the road</h1>
+        <p class="sub">Notes, photos, and pocket itineraries.</p>
+      </div>
+    </section>
+
+    <!-- Main content: div -> main; left stays a section, right becomes an aside -->
+    <main id="content">
+      <section class="left-col">
+        <!-- Post card: div -> article; keep card/layout divs -->
+        <article class="post card">
+          <header>
+            <h2 class="post-title">Kyoto in 48 Hours</h2>
+            <p class="post-meta">
+              <time datetime="2025-05">May 2025</time> · Asia · Budget
+            </p>
+          </header>
+
+          <figure>
+            <img
+              class="post-img"
+              src="https://picsum.photos/id/1016/800/500"
+              alt="Kyoto trip collage"
+            />
+            <!-- Optional: <figcaption>Two-day Kyoto highlights.</figcaption> -->
+          </figure>
+
+          <div class="post-body">
+            <p>Temple hopping, alley ramen, and morning markets.</p>
+          </div>
+        </article>
+
+        <article class="post card">
+          <header>
+            <h2 class="post-title">Lisbon Hill Walk</h2>
+            <p class="post-meta">
+              <time datetime="2025-04">April 2025</time> · Europe · Walkable
+            </p>
+          </header>
+
+          <figure>
+            <img
+              class="post-img"
+              src="https://picsum.photos/id/1035/800/500"
+              alt="Lisbon city view"
+            />
+          </figure>
+
+          <div class="post-body">
+            <p>Tiles, trams, and sunset at Miradouro.</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Sidebar: div -> aside; keep panel divs for styling -->
+      <aside class="right-col" aria-labelledby="popular-tags-title">
+        <section class="panel">
+          <h2 id="popular-tags-title" class="panel-title">Popular Tags</h2>
+          <!-- Links -> list for better semantics; classes preserved -->
+          <ul class="tag-list">
+            <li><a href="#" class="tag">streetfood</a></li>
+            <li><a href="#" class="tag">itinerary</a></li>
+            <li><a href="#" class="tag">budget</a></li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <!-- Footer: div -> footer; keep .copy class -->
+    <footer id="bottombar">
+      <p class="copy">© 2025 WanderNote</p>
+    </footer>
+  </body>
+</html>

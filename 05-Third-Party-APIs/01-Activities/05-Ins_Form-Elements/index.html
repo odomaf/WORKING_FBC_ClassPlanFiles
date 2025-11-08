@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>05-Ins — jQuery Pizza (SOLVED)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="bg-dark min-100-vh flex-row align-center justify-center">
+      <div class="col-11 col-sm-8">
+        <h1 class="text-light">Free Pizza Raffle Sign Up!</h1>
+
+        <div class="card rounded bg-light p-3">
+          <div class="card-body">
+            <form id="pizza-form" novalidate>
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <label for="first-name">First Name</label>
+                  <input
+                    id="first-name"
+                    type="text"
+                    class="form-input"
+                    name="first-name"
+                    placeholder="Enter first name"
+                    autocomplete="given-name"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <label for="last-name">Last Name</label>
+                  <input
+                    id="last-name"
+                    type="text"
+                    class="form-input"
+                    name="last-name"
+                    placeholder="Enter last name"
+                    autocomplete="family-name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    class="form-input"
+                    name="email"
+                    placeholder="Enter email"
+                    autocomplete="email"
+                    inputmode="email"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <label for="github">GitHub</label>
+                  <input
+                    id="github"
+                    type="text"
+                    class="form-input"
+                    name="github"
+                    placeholder="Enter GitHub username"
+                    autocomplete="username"
+                  />
+                </div>
+              </div>
+
+              <fieldset class="group">
+                <legend>Select standard pizza toppings</legend>
+                <ul class="checkbox">
+                  <li>
+                    <input type="checkbox" id="cb1" value="pepperoni" />
+                    <label for="cb1">Pepperoni</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="cb2" value="sausage" />
+                    <label for="cb2">Sausage</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="cb3" value="mushrooms" />
+                    <label for="cb3">Mushrooms</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="cb4" value="onions" />
+                    <label for="cb4">Onions</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="cb5" value="green peppers" />
+                    <label for="cb5">Green Peppers</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="cb6" value="extra cheese" />
+                    <label for="cb6">Extra Cheese</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <button id="submit-btn" class="btn btn-block btn-danger" type="submit">
+                Submit Form
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Submission summary -->
+        <div class="card rounded bg-light p-3 mt-3" id="result-card" hidden>
+          <div class="card-body">
+            <h2 class="mb-2">Submission Summary</h2>
+            <pre id="result" class="bg-light p-5" aria-live="polite"></pre>
+          </div>
+        </div>
+
+        <p id="status" class="visually-hidden" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- App JS -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

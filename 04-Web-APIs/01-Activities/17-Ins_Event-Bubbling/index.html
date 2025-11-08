@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Event Bubbling Demo</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h2>Event Bubbling</h2>
+      <p>
+        Click each box or button to see how events bubble up through the DOM
+        tree.
+      </p>
+
+      <div class="outer-div">
+        <p>OUTER DIV — Click to turn me purple</p>
+
+        <div class="inner-div">
+          <p>INNER DIV — Click to turn me orange</p>
+
+          <div>
+            <button class="button">BUTTON — Click to turn me blue</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
