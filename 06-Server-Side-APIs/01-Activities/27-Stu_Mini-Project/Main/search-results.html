@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results | Library of Congress Story Explorer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/jass.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="bg-primary">
+    <main
+      class="flex-row align-start align-stretch-md min-100-vh"
+      aria-labelledby="results-title"
+    >
+      <!-- Sidebar / Search -->
+      <aside class="col-12 col-md-3 bg-light p-3">
+        <h1 class="text-primary mb-2">Library of Congress Story Explorer</h1>
+
+        <form id="search-form" class="mb-3">
+          <label for="search-input" class="form-label">
+            Refine your search
+          </label>
+          <input
+            id="search-input"
+            class="form-input w-100"
+            type="text"
+            placeholder="e.g. jazz, civil rights, Apollo 11"
+            autocomplete="off"
+          />
+
+          <label for="format-input" class="form-label"> Format </label>
+          <select id="format-input" class="form-input w-100">
+            <option value="">All formats</option>
+            <option value="maps">Maps</option>
+            <option value="audio">Audio</option>
+            <option value="photos">Photos</option>
+            <option value="manuscripts">Manuscripts</option>
+            <option value="newspapers">Newspapers</option>
+            <option value="film-and-videos">Film and Videos</option>
+            <option value="notated-music">Notated Music</option>
+            <option value="websites">Websites</option>
+          </select>
+
+          <button class="btn btn-info btn-block mt-2" type="submit">
+            🔄 Search Again
+          </button>
+        </form>
+
+        <a href="./index.html" class="btn btn-block btn-light">
+          ← Back to home
+        </a>
+      </aside>
+
+      <!-- Results -->
+      <section class="col-12 col-md-9 p-3 text-light">
+        <header class="mb-3">
+          <h2 id="results-title" class="mb-1">
+            Showing results for
+            <span id="result-text" class="text-info"></span>
+          </h2>
+          <p id="result-meta" class="text-default text-sm"></p>
+        </header>
+
+        <div id="results-status" class="mb-2 text-default"></div>
+        <div id="result-content"></div>
+      </section>
+    </main>
+
+    <script src="./assets/js/display-search.js"></script>
+  </body>
+</html>

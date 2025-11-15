@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA APOD Fetch Status</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="min-100-vh flex-column bg-light">
+    <header class="p-5 text-center text-white bg-primary">
+      <h1>Server-Side APIs</h1>
+    </header>
+
+    <main class="flex-row justify-center align-center col-auto p-4">
+      <section class="card card-rounded col-7 bg-white">
+        <header class="card-header text-center">
+          <h2 class="text-white">NASA APOD: Fetch Status</h2>
+        </header>
+
+        <div class="p-3">
+          <p class="card-body">
+            This activity uses the NASA APOD API.
+            <br />
+            When the fetch request succeeds, the HTTP status (like
+            <strong>200</strong>) will appear here: <br /><br />
+            <span id="response-text" style="font-weight: bold"></span>
+          </p>
+        </div>
+
+        <footer class="card-footer text-center">
+          Open the Network tab in DevTools to see the full request.
+        </footer>
+      </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

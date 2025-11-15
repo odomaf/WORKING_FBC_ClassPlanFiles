@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Network Activity (Unsolved)</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="min-100-vh flex-column bg-light">
+    <header class="p-5 text-center text-white bg-primary">
+      <h1>Server-Side APIs</h1>
+    </header>
+
+    <main class="flex-row justify-center align-center col-auto p-4">
+      <section class="card card-rounded col-7 bg-white">
+        <header class="card-header text-center">
+          <h2 class="text-white">Network Activity Tab</h2>
+        </header>
+
+        <div class="p-3">
+          <p class="card-body">
+            Use the Network tab to investigate the resources loaded by this
+            page.
+            <br /><br />
+            One of these requests will show a
+            <strong style="color: red">red status</strong> — why? <br /><br />
+            Look up that status code and use it to diagnose the issue in the
+            HTML.
+          </p>
+        </div>
+
+        <footer class="card-footer text-center">
+          Open DevTools → Network → Refresh → Check statuses
+        </footer>
+      </section>
+    </main>
+
+    <!-- ❌ INTENTIONAL BUG: WRONG FILE PATH -->
+    <script src="./wrong-path/script.js"></script>
+  </body>
+</html>

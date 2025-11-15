@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Network Activity</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="min-100-vh flex-column bg-light">
+    <header class="p-5 text-center text-white bg-primary">
+      <h1>Server-Side APIs</h1>
+    </header>
+
+    <main class="flex-row justify-center align-center col-auto p-4">
+      <section class="card card-rounded col-7 bg-white">
+        <header class="card-header text-center">
+          <h2 class="text-white">Network Activity Tab</h2>
+        </header>
+
+        <div class="p-3">
+          <p class="card-body">
+            In this demo, we send one <strong>successful</strong> request and
+            one <strong>failing</strong> request to the Star Wars API (SWAPI).
+            <br /><br />
+            Use this to practice reading the <strong>Network</strong> tab in
+            DevTools:
+          </p>
+
+          <ol class="pl-3">
+            <li>Open DevTools (Cmd+Opt+I on Mac, Ctrl+Shift+I on Windows).</li>
+            <li>Click the <strong>Network</strong> tab.</li>
+            <li>Reload the page (Cmd/Ctrl + R).</li>
+            <li>Filter by <strong>Fetch/XHR</strong> to see the API calls.</li>
+            <li>
+              Compare the <strong>Status</strong> codes (e.g., 200 vs 404).
+            </li>
+          </ol>
+
+          <p class="card-body mb-0">
+            Status codes quickly tell you what happened with each request.
+          </p>
+        </div>
+
+        <footer class="card-footer text-center">
+          Reload the page and inspect each request in the Network tab.
+        </footer>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

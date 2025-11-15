@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Options — Cache Reload (NASA APOD)</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body class="min-100-vh flex-column bg-light">
+    <header class="p-5 text-center text-white bg-primary">
+      <h1>Server-Side APIs</h1>
+    </header>
+
+    <main class="flex-row justify-center align-center col-auto p-4">
+      <section class="card card-rounded col-7 bg-white">
+        <header class="card-header text-center">
+          <h2 class="text-white">Fetch Options: Cache Reload</h2>
+        </header>
+
+        <div class="p-3">
+          <p class="card-body">
+            Modify <strong>script.js</strong> to request the NASA Astronomy
+            Picture of the Day (APOD) API using <code>fetch()</code> with the
+            options object:
+          </p>
+
+          <pre class="p-2 bg-light">
+{ cache: "reload" }
+          </pre>
+
+          <p class="card-body">
+            Then open DevTools → Console to inspect the returned JSON.
+          </p>
+        </div>
+
+        <footer class="card-footer text-center">
+          Open the console in your browser to see the response!
+        </footer>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

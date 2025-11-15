@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Network Activity (Solved)</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="min-100-vh flex-column bg-light">
+    <header class="p-5 text-center text-white bg-primary">
+      <h1>Server-Side APIs</h1>
+    </header>
+
+    <main class="flex-row justify-center align-center col-auto p-4">
+      <section class="card card-rounded col-7 bg-white">
+        <header class="card-header text-center">
+          <h2 class="text-white">Network Activity Tab</h2>
+        </header>
+
+        <div class="p-3">
+          <p class="card-body">
+            Your browser shows a <strong>failed</strong> network request when an
+            asset cannot be loaded. <br /><br />
+            After fixing the <code>&lt;script&gt;</code> path, reload and
+            confirm that the request now shows a <strong>200 OK</strong> status.
+          </p>
+        </div>
+
+        <footer class="card-footer text-center">
+          Open DevTools → Network → Refresh → Verify success
+        </footer>
+      </section>
+    </main>
+
+    <!-- ✅ FIXED PATH -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

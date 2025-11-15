@@ -1,0 +1,28 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+header h1 {
+  font-weight: 600;
+}
+
+#message {
+  min-height: 1.5rem;
+}
+
+/* Current weather card */
+.current-weather .card {
+  max-width: 420px;
+}
+
+/* Forecast cards */
+.forecast .card {
+  height: 100%;
+}
+
+/* Tiny tweak for weather icons */
+.weather-icon {
+  width: 64px;
+  height: 64px;
+}

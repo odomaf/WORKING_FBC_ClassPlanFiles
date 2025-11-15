@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08-Stu_Parse-JSON (Unsolved)</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="min-100-vh flex-column bg-light">
+    <header class="p-5 text-center text-white bg-primary">
+      <h1>Server-Side APIs</h1>
+    </header>
+
+    <main class="flex-row justify-center align-center col-auto p-4">
+      <section class="card card-rounded col-7 bg-white">
+        <header class="card-header text-center">
+          <h2 class="text-white">Parsing JSON (Unsolved)</h2>
+        </header>
+
+        <div class="card-body p-4">
+          <p class="mb-3">
+            Your task is to use <code>fetch()</code> to request Star Wars
+            characters from <code>https://swapi.dev/api/people/</code>, parse
+            the JSON, and
+            <strong
+              >log the first 5 characters’ <code>name</code> and
+              <code>birth_year</code></strong
+            >
+            to the console.
+          </p>
+
+          <ol class="mb-3">
+            <li>
+              Create <code>requestUrl</code> in
+              <code>assets/js/script.js</code>.
+            </li>
+            <li>
+              Call <code>fetch(requestUrl)</code> →
+              <code>.then(response.json())</code> → <code>.then(data)</code>.
+            </li>
+            <li>
+              Inspect the raw <code>data</code> in DevTools. Use
+              <code>data.results</code>.
+            </li>
+            <li>
+              Loop through the first five items (indexes
+              <code>0</code>–<code>4</code>).
+            </li>
+            <li>Log <code>name</code> and <code>birth_year</code> for each.</li>
+          </ol>
+
+          <p class="text-center">
+            <em>Open your browser console to see your output.</em>
+          </p>
+
+          <!-- Optional: If students want to render results later, they can use this list -->
+          <ul id="results" class="mt-3"></ul>
+        </div>
+
+        <footer class="card-footer text-center">
+          Use <strong>let/const</strong>, no arrow functions, and add a
+          <code>.catch()</code> if you’d like.
+        </footer>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

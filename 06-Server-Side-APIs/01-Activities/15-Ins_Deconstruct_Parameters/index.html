@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deconstruct Query Parameters (NASA APOD)</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body class="min-100-vh flex-column bg-light">
+    <header class="p-5 text-center text-white bg-primary">
+      <h1>Server-Side APIs</h1>
+    </header>
+
+    <main class="flex-row justify-center align-center col-auto p-4">
+      <section class="card card-rounded col-7 bg-white">
+        <header class="card-header text-center">
+          <h2 class="text-white">Deconstruct Query Parameters</h2>
+        </header>
+
+        <div class="p-3">
+          <p class="card-body">
+            This demo uses the
+            <strong>NASA APOD (Astronomy Picture of the Day)</strong> API. We
+            build the URL from a base plus query parameters:
+          </p>
+
+          <pre class="p-2 bg-light">
+https://api.nasa.gov/planetary/apod
+  ?api_key=DEMO_KEY
+  &amp;date=2021-06-01
+  &amp;thumbs=true
+          </pre>
+
+          <p class="card-body">
+            Open <strong>DevTools → Console</strong> to see:
+          </p>
+          <ul>
+            <li>The full request URL</li>
+            <li>The HTTP status code</li>
+            <li>The parsed JSON response from NASA</li>
+          </ul>
+        </div>
+
+        <footer class="card-footer text-center">
+          Open the console in your browser to see the responses!
+        </footer>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

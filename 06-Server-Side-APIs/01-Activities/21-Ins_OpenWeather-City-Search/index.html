@@ -1,0 +1,64 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenWeather – City Search (Instructor Demo)</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="min-100-vh flex-column">
+    <header class="p-5 text-center text-white bg-primary">
+      <h1>Server-Side APIs</h1>
+    </header>
+
+    <main class="flex-row justify-center align-center col-auto p-4 bg-light">
+      <section class="card card-rounded col-7 bg-white">
+        <header class="card-header text-center">
+          <h2 class="text-white">OpenWeather City Search (Demo)</h2>
+        </header>
+
+        <div class="p-4">
+          <p class="card-body">This demo shows how to:</p>
+          <ul class="card-body">
+            <li>
+              Use the <strong>Geocoding API</strong> to turn a city name into
+              latitude/longitude
+            </li>
+            <li>
+              Use the <strong>Current Weather API</strong> with those
+              coordinates
+            </li>
+            <li>Update the page with the results</li>
+          </ul>
+
+          <form id="city-form" class="mt-3">
+            <label for="city-input" class="form-label">City Name</label>
+            <input
+              id="city-input"
+              type="text"
+              class="form-input"
+              placeholder="e.g. Denton, London, Tokyo"
+              required
+            />
+            <button class="btn btn-primary mt-2" type="submit">
+              Search Weather
+            </button>
+          </form>
+
+          <div id="message" class="mt-3 text-center"></div>
+
+          <div id="weather-result" class="mt-4">
+            <!-- Weather results will be injected here -->
+          </div>
+        </div>
+
+        <footer class="card-footer text-center">
+          Open DevTools &gt; Network and Console to follow each request.
+        </footer>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
