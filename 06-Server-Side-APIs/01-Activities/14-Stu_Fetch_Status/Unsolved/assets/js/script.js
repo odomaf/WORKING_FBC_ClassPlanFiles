@@ -1,4 +1,5 @@
-const badRequestUrl = "https://api.nasa.gov/planetary/apod?apiKey=WRONG_KEY";
+const badRequestUrl = "https://api.nasa.gov/planetary/apod?api_key=WRONG_KEY";
+const goodRequestUrl = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
 
 const responseText = document.getElementById("response-text");
 
@@ -6,6 +7,13 @@ function getApi(requestUrl) {
   fetch(requestUrl)
     .then(function (response) {
       console.log(response.status);
+      if (response.status !== 200) {
+        responseText.textContent = response.status;
+        responseText.style.backgroundColor = "rgba(255, 0, 0, 1)";
+      } else {
+        responseText.textContent = response.status;
+        responseText.style.backgroundColor = "rgba(0, 128, 0, 1)";
+      }
 
       // TODO:
       // Use response.status to update the page.
@@ -24,4 +32,4 @@ function getApi(requestUrl) {
     });
 }
 
-getApi(badRequestUrl);
+getApi(goodRequestUrl);
