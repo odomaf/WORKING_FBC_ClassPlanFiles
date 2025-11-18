@@ -21,8 +21,8 @@ fetch(
 /*
 TODO — Explain each parameter:
 
-api_key ->
-date ->
-thumbs ->
-concept_tags ->
+api_key -> DEMO_KEY to get us into the API
+date -> date we want information from
+thumbs -> we set this to true because we want thumbnails
+concept_tags -> we set this to true because we want concept tags
 */
