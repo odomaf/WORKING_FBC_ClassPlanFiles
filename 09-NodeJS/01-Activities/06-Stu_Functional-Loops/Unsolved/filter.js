@@ -8,43 +8,44 @@ console.log("Original array:", originalArray);
 //    - Keep only numbers where num % 2 === 0
 //    - Log the result
 // ------------------------------------------------------------
+let evenNumbers = originalArray.filter((number) => number % 2 === 0);
 
-
-
-// console.log("\nEven numbers:");
-// console.log(evenNumbers);
+console.log("\nEven numbers:");
+console.log(evenNumbers);
 
 // ------------------------------------------------------------
 // 2. TODO: Create a function named `isPrime`.
 //    - It should return true if a number is prime, false otherwise.
 //    - Hint: Numbers less than 2 are NOT prime.
 // ------------------------------------------------------------
-
-
-
+let isPrime = (number) => {
+  for (var i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) return false;
+  }
+  return true;
+};
 // ------------------------------------------------------------
 // 3. TODO: Use filter with `isPrime` to create `primeArray`.
 //    - Log the result
 // ------------------------------------------------------------
-
-
-
-// console.log("\nPrime numbers:");
-// console.log(primeArray);
+let primeArray = originalArray.filter((number) => isPrime(number));
+console.log("\nPrime numbers:");
+console.log(primeArray);
 
 // ------------------------------------------------------------
 // 4. TODO: Use filter to create `overFive`.
 //    - Keep only numbers greater than 5
 //    - Log the result
 // ------------------------------------------------------------
-
-
-
-// console.log("\nNumbers greater than 5:");
-// console.log(overFive);
+let overFive = originalArray.filter((number) => number > 5);
+console.log("\nNumbers greater than 5:");
+console.log(overFive);
 
 // ------------------------------------------------------------
 // 5. (Optional) Summarize all three results in a single console.log
 //    Example shape (values will differ based on your work):
 //    { evenNumbers: [...], primeArray: [...], overFive: [...] }
 // ------------------------------------------------------------
+
+
+

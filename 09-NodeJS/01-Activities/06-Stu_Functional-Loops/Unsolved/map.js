@@ -7,22 +7,19 @@ console.log("Original array:", originalArray);
 //    - Each value should be original * 2
 //    - Log the result
 // ------------------------------------------------------------
+let doubled = originalArray.map((number) => number * 2);
 
-
-
-// console.log("\nDoubled values:");
-// console.log(doubled);
+console.log("\nDoubled values:");
+console.log(doubled);
 
 // ------------------------------------------------------------
 // 2. TODO: Use map to create a `tripled` array.
 //    - Each value should be original * 3
 //    - Log the result
 // ------------------------------------------------------------
-
-
-
-// console.log("\nTripled values:");
-// console.log(tripled);
+let tripled = originalArray.map((number) => number * 3);
+console.log("\nTripled values:");
+console.log(tripled);
 
 // ------------------------------------------------------------
 // 3. TODO: Use map to create an `oddOrEven` array.
@@ -30,11 +27,11 @@ console.log("Original array:", originalArray);
 //    - Use a ternary operator
 //    - Log the result
 // ------------------------------------------------------------
-
-
-
-// console.log("\nOdd/Even labels:");
-// console.log(oddOrEven);
+let oddOrEven = originalArray.map((number) =>
+  number % 2 === 0 ? "even" : "odd"
+);
+console.log("\nOdd/Even labels:");
+console.log(oddOrEven);
 
 // ------------------------------------------------------------
 // 4. (Optional) Log a summary object with all three arrays:

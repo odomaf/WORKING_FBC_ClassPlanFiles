@@ -4,7 +4,7 @@ const attendees = [
   { name: "Mia", age: 18 },
   { name: "Noah", age: 22 },
   { name: "Ava", age: 14 },
-  { name: "Ethan", age: 15 }
+  { name: "Ethan", age: 15 },
 ];
 
 // ------------------------------------------------------------
@@ -12,27 +12,27 @@ const attendees = [
 // ------------------------------------------------------------
 
 console.log("Ages of all attendees:");
-attendees.forEach(person => console.log(`• ${person.name}: ${person.age}`));
-
+attendees.forEach((attendee) =>
+  console.log(`• ${attendee.name}: ${attendee.age}`)
+);
 
 // ------------------------------------------------------------
 // 2. filter — keep only attendees who meet a condition
 // ------------------------------------------------------------
 
-const allowedForRatedR = attendees.filter(person => person.age >= 17);
+const allowedForRatedR = attendees.filter((person) => person.age >= 17);
 
 console.log("\nAttendees allowed to watch Rated-R:");
 console.log(allowedForRatedR);
-
 
 // ------------------------------------------------------------
 // 3. map — transform each attendee into a new object (immutability)
 // ------------------------------------------------------------
 
-const verifiedAttendees = attendees.map(person => {
+const verifiedAttendees = attendees.map((person) => {
   return {
-    ...person,                         // copy existing data safely
-    canWatchRatedR: person.age >= 17   // add a new property
+    ...person, // copy existing data safely
+    canWatchRatedR: person.age >= 17, // add a new property
   };
 });
 
