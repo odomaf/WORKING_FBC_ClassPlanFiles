@@ -9,11 +9,37 @@ const fs = require("fs");
 //   • Log a success message or an error to the console
 // ------------------------------------------------------------
 
-const writeToLog = message => {
+const userInput = process.argv[2];
+const writeToLog = (message) => {
+  if (message) {
+    console.log("----writing file----");
+    fs.writeFile("log.txt", message, (err) => {
+      if (err) {
+        console.log("Error writing file", err);
+      } else {
+        console.log("----DONE---");
+      }
+    });
+  } else {
+    console.log("Please enter a value to log to the file");
+  }
   // Your code here
 };
 
+const readLog = () => {
+  console.log("----Reading File----");
+  fs.readFile("log.txt", "utf8", (err, contents) => {
+    if (err) {
+      console.error("Error reading file:", err);
+      return;
+    } else {
+      console.log("File says: ", contents);
+    }
+  });
+};
 
+writeToLog(userInput);
+readLog();
 
 // ------------------------------------------------------------
 // TODO: Implement addFunc(x, y)
@@ -29,8 +55,6 @@ const addFunc = (x, y) => {
   // Your code here
 };
 
-
-
 // ------------------------------------------------------------
 // TODO: Call addFunc using command-line arguments
 // Example usage:
@@ -40,4 +64,3 @@ const addFunc = (x, y) => {
 // ------------------------------------------------------------
 
 // addFunc(process.argv[2], process.argv[3]);
-

@@ -14,12 +14,12 @@ const runtime = {
 // Destructure values from runtime so that
 // name → "Node.js"
 // category → "JavaScript Runtime"
+const { name, category } = runtime;
 
 // const { ... } = runtime;
 
 console.log(name);
 console.log(category);
-
 
 // ------------------------------------------------------------
 // 2. Nested Object Destructuring
@@ -40,14 +40,10 @@ const languageInfo = {
   },
 };
 
-// TODO:
-// Pull out primary and secondary from the nested frameworks object.
-
-// const { ... } = languageInfo.tooling.frameworks;
+const { primary, secondary } = languageInfo.tooling.frameworks;
 
 console.log(primary);
 console.log(secondary);
-
 
 // ------------------------------------------------------------
 // 3. Array Destructuring
@@ -61,11 +57,10 @@ const coreTechnologies = ["HTML", "CSS", "JavaScript"];
 // styling = "CSS"
 // scripting = "JavaScript"
 
-// const [ ... ] = coreTechnologies;
+const [markup, styling, scripting] = coreTechnologies;
 
 console.log(markup, styling, scripting);
 console.log(scripting);
-
 
 // ------------------------------------------------------------
 // BONUS (Optional)
@@ -74,3 +69,5 @@ console.log(scripting);
 // Example:
 // const { name: runtimeName } = runtime;
 // console.log(runtimeName);
+const { name: locationInfoName } = languageInfo;
+console.log(locationInfoName);
