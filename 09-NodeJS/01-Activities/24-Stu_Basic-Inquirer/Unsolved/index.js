@@ -9,8 +9,8 @@ inquirer
   .prompt([
     {
       type: "input",
-      name: "username",
-      message: "What is your username?",
+      name: "textToLog",
+      message: "What text would you like to log?",
     },
     {
       type: "password",

@@ -8,3 +8,15 @@
 // Example structure:
 // module.exports = { ... };
 
+const getSum = (a, b) => a + b;
+const getDifference = (a, b) => a - b;
+const getProduct = (a, b) => a * b;
+const getQuotient = (a, b) => a / b;
+
+module.exports = {
+  getSum,
+  getDifference,
+  getProduct,
+  getQuotient
+}
+

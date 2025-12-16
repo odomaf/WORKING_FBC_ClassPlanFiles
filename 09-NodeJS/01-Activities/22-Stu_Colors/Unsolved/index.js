@@ -3,13 +3,20 @@
 //   npm install chalk@4
 
 // TODO: Import chalk
-// const chalk = ...
+const chalk = require("chalk");
 
 // TODO: Capture user input from process.argv
-// const name = ...
-// const profit = ...
+const name = process.argv[2];
+const profit = process.argv[3];
+
+console.log("Name: ", name);
+console.log("Profit: ", profit);
 
 // TODO: Validate inputs (name exists, profit is a number)
+const nameExists = name ? true : false;
+const profitIsNumber = isNan(profit);
+
+console.log
 
 // TODO: Determine whether to use bgGreenBright or bgRedBright
 // const profitColor = ...

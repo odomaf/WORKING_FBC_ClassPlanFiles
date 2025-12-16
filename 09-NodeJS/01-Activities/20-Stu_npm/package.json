@@ -1,0 +1,16 @@
+{
+  "name": "20-stu_npm",
+  "version": "1.0.0",
+  "description": "In this activity, you will set up a Node.js project, install dependencies using npm, and run a simple script using the inquirer package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
