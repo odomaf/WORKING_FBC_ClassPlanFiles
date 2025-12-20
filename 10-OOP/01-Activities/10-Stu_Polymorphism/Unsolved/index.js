@@ -31,12 +31,14 @@ class Reply extends ContentItem {
 
   // BUG: This override doesn't include the message (it behaves like ContentItem)
   printMetaData() {
-    console.log(`Created by ${this.author} on ${this.createdAt}`);
+    console.log(
+      `${this.message} -- Created by ${this.author} on ${this.createdAt}`
+    );
   }
 }
 
-const article = new Article('Alex', 'Understanding Polymorphism', '03/20/2024');
-const reply = new Reply('Jamie', '03/21/2024', 'This finally makes sense!');
+const article = new Article("Alex", "Understanding Polymorphism", "03/20/2024");
+const reply = new Reply("Jamie", "03/21/2024", "This finally makes sense!");
 
 article.printMetaData();
 reply.printMetaData();

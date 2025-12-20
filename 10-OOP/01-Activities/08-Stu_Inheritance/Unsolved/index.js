@@ -7,8 +7,10 @@
 // It should assign both properties using `this`
 
 class ContentItem {
+  // TODO: Assign properties here
   constructor(author, createdAt) {
-    // TODO: Assign properties here
+    this.author = author;
+    this.dateCreated = createdAt;
   }
 }
 
@@ -22,12 +24,14 @@ class ContentItem {
 
 class Article extends ContentItem {
   constructor(author, headline, createdAt) {
-    // TODO: Call super() here
-
-    // TODO: Assign Article-specific properties here
+    super(author, createdAt);
+    this.headline = headline;
+    this.reactions = [];
   }
-
-  // TODO: addReaction(reaction) method
+  addReaction(reaction) {
+    this.reactions.push(reaction);
+  }
+  // TODO: Assign Article-specific properties here
 }
 
 // TODO: Create a child class named Reaction that extends ContentItem
@@ -35,19 +39,25 @@ class Article extends ContentItem {
 // It should call super(author, createdAt)
 // It should set:
 //   - this.message
-
 class Reaction extends ContentItem {
   constructor(author, message, createdAt) {
     // TODO: Call super() here
+    super(author, createdAt);
 
     // TODO: Assign Reaction-specific properties here
+    this.message = message;
   }
 }
 
 // TODO: Create a new Article instance and store it in a variable named article
 // Use your own custom values
+const article = new Article("Anne Odom", "Sheep", "12/20/2023");
 
 // TODO: Create a new Reaction instance and store it in a variable named reaction
 // Use your own custom values
+const reaction = new Reaction("Boo", "Stinky", "12/25/2023");
 
+article.addReaction(reaction);
 // TODO: Log both objects to the console to verify they were instantiated correctly
+console.log(article);
+console.log(reaction);
