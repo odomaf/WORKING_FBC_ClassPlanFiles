@@ -1,0 +1,20 @@
+[
+  {
+    "title": "MDN: Express/Node Introduction",
+    "description": "A beginner-friendly overview of Express and Node server basics.",
+    "website": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction",
+    "image": "mdn.png"
+  },
+  {
+    "title": "Express Docs: Static Files",
+    "description": "Official Express documentation for serving static files with express.static().",
+    "website": "https://expressjs.com/en/starter/static-files.html",
+    "image": "express.png"
+  },
+  {
+    "title": "W3Schools: Node.js Intro",
+    "description": "Quick intro to Node.js concepts and how servers run JavaScript.",
+    "website": "https://www.w3schools.com/nodejs/nodejs_intro.asp",
+    "image": "w3.png"
+  }
+]

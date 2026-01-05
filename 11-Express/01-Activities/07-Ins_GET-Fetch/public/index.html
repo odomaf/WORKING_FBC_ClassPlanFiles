@@ -1,0 +1,30 @@
+<!-- public/index.html (07-Ins-GET-Fetch) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GET Fetch Demo</title>
+    <link rel="stylesheet" href="jass.css" />
+  </head>
+
+  <body>
+    <div class="container pad-container">
+      <div class="card bg-white card-rounded w-50">
+        <div class="card-header bg-dark text-center p-3">
+          <h1 class="text-light">Glossary Fetch Demo</h1>
+          <p class="text-light">
+            Click the button to fetch JSON from the server and render it on the page.
+          </p>
+          <button class="p-3" id="load-btn">Load Terms</button>
+        </div>
+
+        <div class="card-body m-5" id="terms">
+          <p class="text-muted">Terms will appear here...</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

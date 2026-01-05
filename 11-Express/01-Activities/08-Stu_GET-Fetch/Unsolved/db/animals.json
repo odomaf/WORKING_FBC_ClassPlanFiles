@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Nova",
+    "age": 3,
+    "description": "Curious, energetic, and always exploring new corners of the house.",
+    "image_url": "https://placehold.co/300x180?text=Nova"
+  },
+  {
+    "name": "Atlas",
+    "age": 6,
+    "description": "Calm and observant, prefers quiet naps and sunny windows.",
+    "image_url": "https://placehold.co/300x180?text=Atlas"
+  },
+  {
+    "name": "Pixel",
+    "age": 1,
+    "description": "Playful and fast, loves chasing anything that moves.",
+    "image_url": "https://placehold.co/300x180?text=Pixel"
+  },
+  {
+    "name": "Luna",
+    "age": 4,
+    "description": "Affectionate and gentle, enjoys company and cuddles.",
+    "image_url": "https://placehold.co/300x180?text=Luna"
+  }
+]

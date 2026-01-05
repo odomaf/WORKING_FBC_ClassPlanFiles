@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Assets Demo</title>
+
+    <!-- CSS path looks right… or is it? -->
+    <link rel="stylesheet" href="/public/styles/jass.css" />
+  </head>
+
+  <body>
+    <section class="jumbotron bg-dark text-center p-5">
+      <h1 class="text-light">Student Club Posters</h1>
+      <p class="text-light">
+        Fix the static assets so the images and styles load correctly.
+      </p>
+    </section>
+
+    <div class="articles container p-5">
+      <div class="card card-rounded">
+        <div class="card-header">Aviation Club Meetup</div>
+        <div class="card-body">
+          Weekly meetup for students interested in aviation and flight.
+        </div>
+        <!-- BUG: Static path is incorrect -->
+        <img class="card-image" src="/public/images/poster-aviation.jpg" />
+      </div>
+
+      <div class="card card-rounded">
+        <div class="card-header">Code & Coffee</div>
+        <div class="card-body">
+          Casual coding sessions for all skill levels.
+        </div>
+        <img class="card-image" src="/public/images/poster-code.jpg" />
+      </div>
+
+      <div class="card card-rounded">
+        <div class="card-header">Cyber Basics Workshop</div>
+        <div class="card-body">
+          Learn how to protect yourself online.
+        </div>
+        <img class="card-image" src="/public/images/poster-cyber.jpg" />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+[
+    {
+        "email": "john.appleseed@school.com",
+        "topic": "JavaScript",
+        "message": "I\u2019m stuck on fetch(). Can someone explain request/response flow?",
+        "request_id": "8734"
+    }
+]

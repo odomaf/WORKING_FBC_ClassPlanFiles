@@ -1,0 +1,39 @@
+<!-- public/sendFile.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Express sendFile Example</title>
+
+    <link rel="stylesheet" href="jass.css" />
+    <style>
+      body {
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron bg-light">
+        <h1><code>res.sendFile()</code> Delivered 📦</h1>
+      </div>
+
+      <article class="text-primary p-5">
+        <p>
+          <code>res.sendFile()</code> is used to send a file (like HTML) from the
+          server to the browser.
+        </p>
+
+        <p>
+          Since file paths can be tricky across operating systems, we usually
+          build the path using Node’s <code>path.join()</code>.
+        </p>
+
+        <p class="mt-3">
+          <a href="/"><code>Back to home</code></a>
+        </p>
+      </article>
+    </div>
+  </body>
+</html>

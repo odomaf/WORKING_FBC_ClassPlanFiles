@@ -1,0 +1,41 @@
+<!-- public/routes.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Express Route Example</title>
+
+    <link rel="stylesheet" href="jass.css" />
+    <style>
+      body {
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron bg-info">
+        <h1><code>app.get()</code> Route Hit ✅</h1>
+      </div>
+
+      <article class="text-primary p-5">
+        <p>
+          In Express, <code>app.get(path, handler)</code> tells your server how to
+          respond when the browser makes a <strong>GET</strong> request to a
+          specific URL.
+        </p>
+
+        <p>
+          Each HTTP method has a matching Express method:
+          <code>app.get</code>, <code>app.post</code>, <code>app.put</code>,
+          <code>app.delete</code>.
+        </p>
+
+        <p class="mt-3">
+          <a href="/"><code>Back to home</code></a>
+        </p>
+      </article>
+    </div>
+  </body>
+</html>

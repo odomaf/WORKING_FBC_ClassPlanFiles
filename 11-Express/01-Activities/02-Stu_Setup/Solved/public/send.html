@@ -1,0 +1,40 @@
+<!-- public/send.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sending Responses</title>
+
+    <link rel="stylesheet" href="jass.css" />
+    <style>
+      body {
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="code"><code>res.send()</code></h1>
+      </div>
+
+      <article class="text-primary p-5">
+        <p>
+          <code>res.send()</code> sends a response back to the browser. Express
+          can automatically figure out the response type based on what you send.
+        </p>
+
+        <ul>
+          <li>Send a string → usually treated like HTML/text</li>
+          <li>Send an object/array → often better to use <code>res.json()</code></li>
+          <li>Send a Buffer → useful for raw binary data</li>
+        </ul>
+
+        <p class="mt-3">
+          <a href="/"><code>Back to home</code></a>
+        </p>
+      </article>
+    </div>
+  </body>
+</html>

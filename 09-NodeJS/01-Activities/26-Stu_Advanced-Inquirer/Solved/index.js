@@ -28,10 +28,10 @@ inquirer
       choices: ["email", "phone", "telekinesis"],
     },
   ])
-  .then(data => {
+  .then((data) => {
     const filename = `${data.name.toLowerCase().split(" ").join("")}.json`;
 
-    fs.writeFile(filename, JSON.stringify(data, null, 2), err => {
+    fs.writeFile(filename, JSON.stringify(data, null, 2), (err) => {
       if (err) {
         console.error("Error writing file:", err);
         return;
@@ -39,4 +39,4 @@ inquirer
       console.log(chalk.greenBright(`Success! Saved responses to ${filename}`));
     });
   })
-  .catch(err => console.error("Prompt error:", err));
+  .catch((err) => console.error("Prompt error:", err));

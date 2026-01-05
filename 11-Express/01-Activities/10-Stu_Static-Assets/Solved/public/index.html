@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Assets Demo</title>
+    <link rel="stylesheet" href="styles/jass.css" />
+  </head>
+
+  <body>
+    <section class="jumbotron bg-dark text-center p-5">
+      <h1 class="text-light">Student Club Posters</h1>
+      <p class="text-light">
+        This page loads CSS and images from the <code>/public</code> folder using
+        static middleware.
+      </p>
+    </section>
+
+    <div class="articles container p-5" id="articles">
+      <div class="card card-rounded">
+        <div class="card-header">Aviation Club Meetup</div>
+        <div class="card-body">
+          Weekly hangout for students who love aviation. Topics include flight
+          training, careers, and cool aviation stories.
+        </div>
+        <img class="card-image" src="images/poster-aviation.jpg" alt="Aviation poster" />
+        <div class="card-footer"><a href="#">RSVP</a></div>
+      </div>
+
+      <div class="card card-rounded">
+        <div class="card-header">Code & Coffee</div>
+        <div class="card-body">
+          Bring a laptop, solve one problem together, and learn something new.
+          Perfect for beginners building confidence.
+        </div>
+        <img class="card-image" src="images/poster-code.jpg" alt="Code poster" />
+        <div class="card-footer"><a href="#">Join</a></div>
+      </div>
+
+      <div class="card card-rounded">
+        <div class="card-header">Cyber Basics Workshop</div>
+        <div class="card-body">
+          Learn the basics of passwords, phishing, and how the web works behind
+          the scenes. No experience required.
+          <b>Demo only — not a real event link.</b>
+        </div>
+        <img class="card-image" src="images/poster-cyber.jpg" alt="Cyber poster" />
+        <div class="card-footer"><a href="#">Learn More</a></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "study-boost-board-render-demo",
+  "version": "1.0.0",
+  "description": "A minimal Express app for Render deployment practice",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "term": "HTTP",
+    "definition": "HTTP (Hypertext Transfer Protocol) is the set of rules that clients and servers use to communicate on the web.",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+  },
+  {
+    "term": "JSON",
+    "definition": "JSON (JavaScript Object Notation) is a lightweight data format that is easy for humans to read and easy for machines to parse.",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON"
+  },
+  {
+    "term": "REST",
+    "definition": "REST (Representational State Transfer) is a style of building APIs where clients request resources using URLs and receive structured responses.",
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/REST"
+  }
+]

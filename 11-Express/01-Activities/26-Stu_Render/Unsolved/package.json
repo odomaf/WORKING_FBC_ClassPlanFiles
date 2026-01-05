@@ -1,0 +1,10 @@
+{
+  "name": "26-stu-render-study-boost-board",
+  "version": "1.0.0",
+  "description": "Student deployment practice: deploy a minimal Express app to Render.",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

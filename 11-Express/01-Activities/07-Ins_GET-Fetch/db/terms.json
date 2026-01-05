@@ -1,0 +1,51 @@
+[
+  {
+    "term": "HTTP",
+    "definition": "HTTP (Hypertext Transfer Protocol) is the set of rules that clients and servers use to communicate on the web.",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+    "category": "web",
+    "relevance": 8
+  },
+  {
+    "term": "JSON",
+    "definition": "JSON (JavaScript Object Notation) is a lightweight data format that is easy for humans to read and easy for machines to parse.",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON",
+    "category": "web",
+    "relevance": 10
+  },
+  {
+    "term": "DNS",
+    "definition": "DNS (Domain Name System) translates domain names into IP addresses so browsers can locate servers on the internet.",
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/DNS",
+    "category": "networking",
+    "relevance": 7
+  },
+  {
+    "term": "TLS",
+    "definition": "TLS (Transport Layer Security) encrypts data sent between clients and servers to improve privacy and security.",
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/TLS",
+    "category": "networking",
+    "relevance": 6
+  },
+  {
+    "term": "Docker",
+    "definition": "Docker packages applications and dependencies into containers so they run consistently across environments.",
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Container",
+    "category": "cloud",
+    "relevance": 5
+  },
+  {
+    "term": "VPS",
+    "definition": "A VPS (Virtual Private Server) is a virtual machine that runs its own operating system and behaves like a dedicated server.",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server",
+    "category": "cloud",
+    "relevance": 4
+  },
+  {
+    "term": "REST",
+    "definition": "REST is a common API design style where clients request resources using URLs and receive structured responses (often JSON).",
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
+    "category": "web",
+    "relevance": 9
+  }
+]

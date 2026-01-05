@@ -1,0 +1,20 @@
+[
+    {
+        "username": "JJ",
+        "category": "Focus",
+        "hack": "Use a 25-minute timer, then take a 5-minute break.",
+        "hack_id": "37t8"
+    },
+    {
+        "username": "Sarah",
+        "category": "Study",
+        "hack": "Teach the concept out loud to test understanding.",
+        "hack_id": "701e"
+    },
+    {
+        "username": "CoolGuy1",
+        "category": "Writing",
+        "hack": "Pick one font family and use size/weight for hierarchy.",
+        "hack_id": "0a46"
+    }
+]
