@@ -5,7 +5,8 @@
     "username": "skywalker92",
     "review": "Great discussion on flight training paths and networking opportunities.",
     "rating": 5,
-    "review_id": "a1f3"
+    "review_id": "a1f3",
+    "upvotes": 0
   },
   {
     "eventName": "Code & Coffee",
@@ -13,7 +14,8 @@
     "username": "dev_dan",
     "review": "Loved the casual vibe. Worked on JavaScript projects with other students.",
     "rating": 4,
-    "review_id": "b7c9"
+    "review_id": "b7c9",
+    "upvotes": 0
   },
   {
     "eventName": "Cybersecurity Workshop",
@@ -21,7 +23,8 @@
     "username": "packet_sniffer",
     "review": "Hands-on labs were challenging but very informative.",
     "rating": 5,
-    "review_id": "c2d8"
+    "review_id": "c2d8",
+    "upvotes": 0
   },
   {
     "eventName": "AI Study Group",
@@ -29,6 +32,7 @@
     "username": "ml_student",
     "review": "Good intro to machine learning concepts, could use more real examples.",
     "rating": 3,
-    "review_id": "e9f1"
+    "review_id": "e9f1",
+    "upvotes": 0
   }
 ]

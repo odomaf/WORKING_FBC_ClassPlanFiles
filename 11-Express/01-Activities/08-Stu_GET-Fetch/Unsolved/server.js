@@ -5,6 +5,7 @@ const petData = require('./db/animals.json');
 const app = express();
 const PORT = 3001;
 
+
 // Static middleware
 app.use(express.static('public'));
 

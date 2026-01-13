@@ -1,9 +1,9 @@
-const express = require('express');
+const express = require("express");
 
 const PORT = 3001;
 
 // Import our local data (mock database)
-const reviews = require('./db/reviews.json');
+const reviews = require("./db/reviews.json");
 
 const app = express();
 
@@ -27,11 +27,11 @@ app.use(express.urlencoded({ extended: true }));
   ---------------------------------------
   Returns ALL reviews
 */
-app.get('/api/reviews', (req, res) => {
+app.get("/api/reviews", (req, res) => {
   console.info(`${req.method} request received to get all reviews`);
 
   // Send all review data back to the client
-  res.json(reviews);
+  res.json({ reviews });
 });
 
 /*
@@ -40,23 +40,23 @@ app.get('/api/reviews', (req, res) => {
   ---------------------------------------
   Accepts a new review in the request body
 */
-app.post('/api/reviews', (req, res) => {
+app.post("/api/reviews", (req, res) => {
   console.info(`${req.method} request received to add a new review`);
 
   // Log incoming data for debugging
-  console.log('Request body:', req.body);
+  console.log("Request body:", req.body);
 
   // Basic validation
   if (!req.body?.eventName || !req.body?.username) {
     return res.json({
-      status: 'error',
-      message: 'Request body must include at least an eventName and username',
+      status: "error",
+      message: "Request body must include at least an eventName and username",
     });
   }
 
   // Build a response object (not saving permanently yet)
   const response = {
-    status: 'success',
+    status: "success",
     data: req.body,
   };
 
