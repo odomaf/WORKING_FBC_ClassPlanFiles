@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "dotenv": "^17.2.3",
+    "express": "^4.22.1",
     "pg": "^8.11.3",
     "sequelize": "^6.33.0"
   }

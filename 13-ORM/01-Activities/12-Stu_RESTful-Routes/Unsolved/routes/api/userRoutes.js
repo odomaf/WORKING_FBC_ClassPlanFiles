@@ -7,6 +7,20 @@ const User = require('../../models/User');
 
 // GET a user
 router.get('/:id', async (req, res) => {
+
+  try {
+    const userData = await User.findOne({
+      where: {
+        id: req.params.id,
+      },
+    })
+    res.status(200).json(userData);
+  }
+  catch {
+    res
+  }
+  
+
 });
 
 // UPDATE a user

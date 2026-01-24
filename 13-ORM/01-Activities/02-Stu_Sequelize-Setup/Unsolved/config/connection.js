@@ -1,12 +1,13 @@
 const Sequelize = require('sequelize');
 
 // TODO: Enable access to .env variables
+require('dotenv').config();
 
 // Create a Sequelize connection instance
 const sequelize = new Sequelize(
-  'library_db',     // Database name
-  'postgres',       // Database username
-  'password',       // Database password
+  process.env.DB_NAME,     // Database name
+  process.env.DB_USER,       // Database username
+  process.env.DB_PASSWORD,       // Database password
   {
     host: 'localhost',
     dialect: 'postgres',
