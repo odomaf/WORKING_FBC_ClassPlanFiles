@@ -1,6 +1,6 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
-const bcrypt = require('bcrypt');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
+const bcrypt = require("bcrypt");
 
 class User extends Model {}
 
@@ -34,13 +34,30 @@ User.init(
   },
   {
     // TODO: Add hooks here
+    hooks: {
+      // Use the beforeCreate hook to work with data before a new instance is created
+      beforeCreate: async (newUserData) => {
+        newUserData.password = await bcrypt.hash(req.body.password, 10);
+        return newUserData;
+      },
+      // Here, we use the beforeUpdate hook to make all of the characters lower case in an updated email address, before updating the database.
+      beforeUpdate: async (updatedUserData) => {
+        if (updatedUserData._changed.has("password")) {
+          updatedUserData.password = await bcrypt.hash(
+            updatedUserData.password,
+            10,
+          );
+        }
+        return updatedUserData;
+      },
+    },
 
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
-  }
+    modelName: "user",
+  },
 );
 
 module.exports = User;
