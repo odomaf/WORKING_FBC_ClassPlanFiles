@@ -1,0 +1,175 @@
+/* =====================================================
+   Street Eats Night Theme
+   Unit 14 – Pre-MVC Styling
+   ===================================================== */
+
+/* ---------- CSS VARIABLES ---------- */
+:root {
+  /* Brand colors */
+  --primary: #1f2933; /* Charcoal */
+  --secondary: #f59e0b; /* Amber */
+  --tertiary: #ef4444; /* Chili red */
+  --quatrinary: #111827; /* Night background */
+
+  /* Neutrals */
+  --light: #f9fafb; /* Light surface / light text */
+  --dark: #0f172a; /* Dark text */
+
+  /* Utility */
+  --error: #dc2626;
+  --border-radius: 0.4rem;
+}
+
+/* ---------- BASE LAYOUT ---------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+
+  /* Dark theme background */
+  background-color: var(--quatrinary);
+
+  /* Default text is light so it’s readable on the dark background */
+  color: var(--light);
+}
+
+/* If you're using the Bootstrap header, these styles will be mostly overridden.
+   Keeping this here is fine for non-Bootstrap versions of the layout. */
+header {
+  padding: 40px;
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-bottom: 4px solid var(--secondary);
+}
+
+/* Do not force flex layout on <main> globally.
+   Individual containers (like .menu-grid) handle layout instead. */
+main {
+  flex-grow: 1;
+}
+
+/* ---------- MENU WRAPPER ---------- */
+.menu-container {
+  /* This is the “light panel” that holds the menu + form */
+  width: 75%;
+  margin: 40px auto;
+  padding: 50px;
+
+  border: 3px solid var(--secondary);
+  border-radius: var(--border-radius);
+
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+/* The grid that holds dish cards.
+   Keeping this separate prevents the form from stretching the layout. */
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+/* ---------- FORMS / FUTURE CONTAINERS ---------- */
+.add-dish-container,
+.edit-dish-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto 0;
+  padding: 30px;
+
+  border: 3px solid var(--secondary);
+  border-radius: var(--border-radius);
+
+  background-color: var(--primary);
+  color: var(--light);
+
+  text-align: center;
+}
+
+/* Form element styling */
+.new-dish-form textarea {
+  width: 100%;
+  resize: vertical;
+  border-radius: var(--border-radius);
+  padding: 10px;
+}
+
+/* ---------- CARDS ---------- */
+.menu-card,
+.dish-card {
+  padding: 15px;
+  border: 2px solid var(--primary);
+  border-radius: var(--border-radius);
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+/* Full-width title card */
+.menu-card {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Dish cards: use flex sizing + the grid gap for spacing */
+.dish-card {
+  flex: 0 1 320px;
+  min-width: 280px;
+  margin: 0; /* gap handles spacing */
+}
+
+/* ---------- HEADERS ---------- */
+.card-header {
+  background-color: var(--secondary);
+  color: var(--dark);
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  text-align: center;
+}
+
+.dish-card-header {
+  font-size: 1.5rem;
+  color: var(--tertiary);
+
+  margin: 0;
+  padding: 0.75rem;
+
+  background-color: var(--light);
+  border-bottom: 2px solid var(--tertiary);
+  text-align: center;
+}
+
+/* ---------- BODY CONTENT ---------- */
+.card-body {
+  padding: 1.25rem;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+/* ---------- LIST STYLING (if you use <ol> style menus later) ---------- */
+.menu-list {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+}
+
+/* ---------- UTILITIES ---------- */
+.has-nuts {
+  color: var(--error);
+  font-weight: bold;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 15px;
+
+  /* Footer sits on the dark page background */
+  color: var(--light);
+  font-size: 0.9rem;
+  opacity: 0.85;
+}

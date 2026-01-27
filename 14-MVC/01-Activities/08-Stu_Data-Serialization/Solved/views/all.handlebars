@@ -1,0 +1,33 @@
+<main class="menu-container">
+  <!-- Menu title -->
+  <div class="menu-card">
+    <header class="card-header">
+      <h2>🍽 Tonight’s Street Eats Menu</h2>
+    </header>
+  </div>
+
+  <!-- Render one card per dish -->
+  {{#each dishes as |dish|}}
+    <div class="dish-card">
+      <div class="dish-card-header">
+        {{dish.id}}.
+        {{dish.dish_name}}
+      </div>
+
+      <div class="card-body">
+        <p>
+          {{dish.description}}
+        </p>
+
+        <p>
+          <strong>Chef:</strong>
+          {{dish.chef_name}}
+        </p>
+
+        {{#if dish.has_nuts}}
+          <p class="has-nuts">⚠️ Contains nuts</p>
+        {{/if}}
+      </div>
+    </div>
+  {{/each}}
+</main>

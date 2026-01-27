@@ -1,0 +1,15 @@
+<section class="grid">
+  {{#each posts}}
+    <article class="card">
+      <h2><a href="/post/{{id}}">{{title}}</a></h2>
+      <p class="meta">By {{user.name}} • {{format_date date_created}}</p>
+    </article>
+  {{/each}}
+
+  {{#unless posts.length}}
+    <div class="card">
+      <h2>No posts yet</h2>
+      <p class="meta">Be the first to share a recipe, review, or tip.</p>
+    </div>
+  {{/unless}}
+</section>

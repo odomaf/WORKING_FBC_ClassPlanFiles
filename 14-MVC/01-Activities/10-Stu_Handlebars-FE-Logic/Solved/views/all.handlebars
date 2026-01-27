@@ -1,0 +1,63 @@
+<section class="menu-container">
+  <div class="menu-card">
+    <header class="card-header">
+      <h2>🌮 Street Eats Night Menu</h2>
+    </header>
+  </div>
+
+  <!-- Cards live in their own grid area -->
+  <div class="menu-grid">
+    {{#each dishes as |dish|}}
+      <div class="dish-card">
+        <div class="dish-card-header">
+          {{dish.id}}.
+          {{dish.dish_name}}
+        </div>
+
+        <div class="card-body">
+          <p>{{dish.description}}</p>
+
+          <p>
+            <strong>Chef:</strong>
+            {{dish.chef_name}}
+          </p>
+
+          {{#if dish.has_nuts}}
+            <p class="has-nuts">⚠️ Contains nuts</p>
+          {{/if}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+  <!-- Form lives in its own full-width area -->
+  <div class="add-dish-container">
+    <h2>👨‍🍳 Add Your Dish to Street Eats Night</h2>
+
+    <form class="new-dish-form">
+      <label for="dish_name">Dish Name</label><br />
+      <textarea id="dish_name" name="dish_name" rows="2"></textarea>
+
+      <br /><br />
+
+      <label for="description">Description</label><br />
+      <textarea id="description" name="description" rows="4"></textarea>
+
+      <br /><br />
+
+      <label for="chef_name">Chef Name</label><br />
+      <textarea id="chef_name" name="chef_name" rows="2"></textarea>
+
+      <br /><br />
+
+      <input type="checkbox" id="has_nuts" name="has_nuts" value="true" />
+      <label for="has_nuts">This dish contains nuts</label>
+
+      <br /><br />
+
+      <button type="submit">Add to Menu</button>
+    </form>
+  </div>
+</section>
+
+<script src="/js/add-dish.js"></script>

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Alex",
+    "email": "alex@foodblog.dev",
+    "password": "password12345"
+  },
+  {
+    "name": "Priya",
+    "email": "priya@foodblog.dev",
+    "password": "password12345"
+  },
+  {
+    "name": "Marco",
+    "email": "marco@foodblog.dev",
+    "password": "password12345"
+  },
+  {
+    "name": "Sofia",
+    "email": "sofia@foodblog.dev",
+    "password": "password12345"
+  },
+  {
+    "name": "Ethan",
+    "email": "ethan@foodblog.dev",
+    "password": "password12345"
+  }
+]

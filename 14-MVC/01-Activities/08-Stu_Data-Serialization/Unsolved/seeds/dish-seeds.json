@@ -1,0 +1,50 @@
+[
+  {
+    "dish_name": "Korean BBQ Tacos",
+    "description": "Marinated Korean-style beef served in warm tortillas with slaw and sesame sauce",
+    "chef_name": "Alex",
+    "has_nuts": false
+  },
+  {
+    "dish_name": "Chicken Shawarma Wraps",
+    "description": "Spiced chicken wrapped in warm pita with garlic sauce, lettuce, and tomato",
+    "chef_name": "Maya",
+    "has_nuts": false
+  },
+  {
+    "dish_name": "Loaded Elote (Mexican Street Corn)",
+    "description": "Grilled corn topped with mayo, cotija cheese, chili powder, and fresh lime",
+    "chef_name": "Carlos",
+    "has_nuts": false
+  },
+  {
+    "dish_name": "Vietnamese Bánh Mì Sliders",
+    "description": "Mini baguette sandwiches with savory protein, pickled vegetables, and fresh herbs",
+    "chef_name": "Linh",
+    "has_nuts": false
+  },
+  {
+    "dish_name": "Spicy Garlic Noodles",
+    "description": "Wok-tossed noodles coated in a spicy garlic sauce and topped with green onions",
+    "chef_name": "Jordan",
+    "has_nuts": false
+  },
+  {
+    "dish_name": "Fried Plantains with Honey Drizzle",
+    "description": "Crispy fried plantains finished with a light honey drizzle",
+    "chef_name": "Rachel",
+    "has_nuts": false
+  },
+  {
+    "dish_name": "Churros with Chocolate Sauce",
+    "description": "Cinnamon-sugar churros served with warm chocolate dipping sauce",
+    "chef_name": "Diego",
+    "has_nuts": false
+  },
+  {
+    "dish_name": "West African Peanut Stew",
+    "description": "Rich, spicy stew made with peanuts, tomatoes, and tender vegetables",
+    "chef_name": "Amina",
+    "has_nuts": true
+  }
+]

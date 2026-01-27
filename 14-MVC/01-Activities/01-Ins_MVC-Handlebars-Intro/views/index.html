@@ -1,0 +1,57 @@
+<!-- 
+  NOTE:
+  This view is currently rendered with hardcoded data.
+  In the next section, we will refactor this page to use
+  Express-Handlebars and follow the MVC pattern.
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Street Eats Night</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/jass.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div class="flex-column justify-space-around min-100-vh">
+      <header
+        class="display-flex justify-space-between align-center p-3 bg-dark text-light"
+      >
+        <h1>🌮 Street Eats Night 🌮</h1>
+        <p class="subtitle">A community-style dinner menu</p>
+      </header>
+
+      <main class="menu-container p-4">
+        <section class="card col-md-10 mx-auto">
+          <header class="card-header">
+            <h2>🍽 Tonight’s Menu</h2>
+          </header>
+
+          <div class="card-body">
+            <ol class="menu-list">
+              <li>Korean BBQ Tacos</li>
+              <li>Chicken Shawarma Wraps</li>
+              <li>Loaded Elote (Mexican Street Corn)</li>
+              <li>Vietnamese Bánh Mì Sliders</li>
+              <li>Spicy Garlic Noodles</li>
+              <li>Fried Plantains with Honey Drizzle</li>
+              <li>Churros with Chocolate Sauce</li>
+            </ol>
+          </div>
+        </section>
+      </main>
+
+      <footer class="text-center p-2 text-muted">
+        <small>Menu data will be dynamic later in this unit</small>
+      </footer>
+    </div>
+  </body>
+</html>

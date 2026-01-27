@@ -1,0 +1,153 @@
+/* =====================================================
+   Street Eats Night Theme
+   Unit 14 – Pre-MVC Styling
+   ===================================================== */
+
+/* ---------- CSS VARIABLES ---------- */
+:root {
+  --primary: #1f2933; /* Charcoal */
+  --secondary: #f59e0b; /* Amber */
+  --tertiary: #ef4444; /* Chili red */
+  --quatrinary: #111827; /* Night background */
+
+  --light: #f9fafb; /* Light surface / text */
+  --dark: #0f172a; /* Dark text */
+
+  --error: #dc2626;
+  --border-radius: 0.4rem;
+}
+
+/* ---------- BASE LAYOUT ---------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+
+  background-color: var(--quatrinary);
+  color: var(--light); /* ✅ readable on dark background */
+}
+
+/* Let Bootstrap handle header spacing if you're using it.
+   If not, keep these styles. */
+header {
+  padding: 40px;
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-bottom: 4px solid var(--secondary);
+}
+
+/* ✅ Do NOT force flex on all <main> elements */
+main {
+  flex-grow: 1;
+}
+
+/* ---------- CONTAINERS ---------- */
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  width: 75%;
+  margin: 40px auto;
+  padding: 50px;
+
+  border: 3px solid var(--secondary);
+  border-radius: var(--border-radius);
+
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+/* Future use containers */
+.add-dish-container,
+.edit-dish-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 35%;
+  min-width: 35%;
+  margin: 20px auto;
+  padding: 50px;
+
+  border: 3px solid var(--secondary);
+  border-radius: var(--border-radius);
+
+  background-color: var(--primary);
+  color: var(--light);
+
+  text-align: center;
+}
+
+/* ---------- CARDS ---------- */
+.dish-card,
+.menu-card {
+  padding: 15px;
+  border: 2px solid var(--primary);
+  border-radius: var(--border-radius);
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+/* ✅ Use gap instead of big margins for cleaner layout */
+.dish-card {
+  flex: 0 1 300px;
+  min-width: 280px; /* more responsive than 35% */
+}
+
+/* Full-width title card inside the menu container */
+.menu-card {
+  width: 100%;
+}
+
+/* ---------- HEADERS ---------- */
+.card-header {
+  background-color: var(--secondary);
+  color: var(--dark);
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  text-align: center;
+}
+
+.dish-card-header {
+  font-size: 1.5rem;
+  color: var(--tertiary);
+
+  margin: 0;
+  padding: 0.75rem;
+
+  background-color: var(--light);
+  border-bottom: 2px solid var(--tertiary);
+  text-align: center;
+}
+
+/* ---------- BODY CONTENT ---------- */
+.card-body {
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* ---------- LIST STYLING ---------- */
+.menu-list {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+}
+
+/* ---------- UTILITIES ---------- */
+.has-nuts {
+  color: var(--error);
+  font-weight: bold;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 15px;
+  color: var(--light);
+  font-size: 0.9rem;
+  opacity: 0.85;
+}

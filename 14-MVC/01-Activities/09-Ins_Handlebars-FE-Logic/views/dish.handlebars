@@ -1,0 +1,18 @@
+<div class="dish-card">
+  <div class="dish-card-header">
+    {{dish_name}}
+  </div>
+
+  <div class="card-body">
+    <p>{{description}}</p>
+
+    <p>
+      <strong>Chef:</strong>
+      {{chef_name}}
+    </p>
+
+    {{#if has_nuts}}
+      <p class="has-nuts">⚠️ Contains nuts</p>
+    {{/if}}
+  </div>
+</div>

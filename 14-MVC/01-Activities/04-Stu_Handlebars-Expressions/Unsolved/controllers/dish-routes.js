@@ -1,0 +1,48 @@
+const router = require("express").Router();
+
+// ? We are using hardcoded data here, where would our data usually come from? Remember - we haven't yet set up a database or Sequelize in our app.
+const dishes = [
+  {
+    dish_name: "Korean BBQ Tacos",
+    description:
+      "Marinated Korean-style beef served in warm tortillas with slaw and sesame sauce",
+  },
+  {
+    dish_name: "Chicken Shawarma Wraps",
+    description:
+      "Spiced chicken wrapped in warm pita with garlic sauce, lettuce, and tomato",
+  },
+  {
+    dish_name: "Loaded Elote (Mexican Street Corn)",
+    description:
+      "Grilled corn topped with mayo, cotija cheese, chili powder, and fresh lime",
+  },
+  {
+    dish_name: "Vietnamese Bánh Mì Sliders",
+    description:
+      "Mini baguette sandwiches with savory protein, pickled vegetables, and fresh herbs",
+  },
+  {
+    dish_name: "Spicy Garlic Noodles",
+    description:
+      "Wok-tossed noodles coated in a spicy garlic sauce and topped with green onions",
+  },
+  {
+    dish_name: "Fried Plantains with Honey Drizzle",
+    description: "Crispy fried plantains finished with a light honey drizzle",
+  },
+  {
+    dish_name: "Churros with Chocolate Sauce",
+    description:
+      "Cinnamon-sugar churros served with warm chocolate dipping sauce",
+  },
+];
+
+// ? Get all dishes
+router.get("/", async (req, res) => {
+  res.render("all");
+});
+
+// TODO: Create a route that handles requests for a single dish
+
+module.exports = router;
