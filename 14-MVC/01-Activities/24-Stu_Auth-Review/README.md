@@ -1,30 +1,28 @@
-# 📐 Add Comments to Implementation of a Login Route
+# 📐 Add Comments to the Login and Authentication Flow
 
-Work with a group to add comments describing the functionality of the code found in the following files:
+Work with your group to add clear, meaningful comments that explain what the following files are doing and how they work together to support user login and authentication:
 
-* [Unsolved/server.js](./Unsolved/server.js)
+- [Unsolved/server.js](./Unsolved/server.js)
+- [Unsolved/controllers/api/userRoutes.js](./Unsolved/controllers/api/userRoutes.js)
+- [Unsolved/utils/auth.js](./Unsolved/utils/auth.js)
+- [Unsolved/controllers/homeRoutes.js](./Unsolved/controllers/homeRoutes.js)
+- [Unsolved/views/layouts/main.handlebars](./Unsolved/views/layouts/main.handlebars)
+- [Unsolved/public/js/login.js](./Unsolved/public/js/login.js)
+- [Unsolved/public/js/logout.js](./Unsolved/public/js/logout.js)
 
-* [Unsolved/controllers/api/userRoutes.js](./Unsolved/controllers/api/userRoutes.js)
+Your goal is to describe:
 
-* [Unsolved/utils/auth.js](./Unsolved/utils/auth.js)
-
-* [Unsolved/controllers/homeRoutes.js](./Unsolved/controllers/homeRoutes.js)
-
-* [Unsolved/views/layouts/main.handlebars](./Unsolved/views/layouts/main.handlebars)
-
-* [Unsolved/public/js/login.js](./Unsolved/public/js/login.js)
-
-* [Unsolved/public/js/logout.js](./Unsolved/public/js/logout.js)
+- How users log in and log out
+- How sessions are created and destroyed
+- How protected routes are enforced
+- How the front end and back end communicate during authentication
 
 ---
 
 ## 🏆 Bonus
 
-If you have completed this activity, work through the following challenge with your group to further your knowledge:
+After completing the required comments, explore the following question with your group:
 
-* What other tools can be used to handle user authentication in a Node.js application?
+- What other libraries or strategies can be used to handle authentication in a Node.js application?
 
-Use [Google](https://www.google.com) or another search engine to research this.
-
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Use a search engine or official documentation to research alternatives.

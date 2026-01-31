@@ -44,5 +44,13 @@ router.get("/", async (req, res) => {
 });
 
 // TODO: Create a route that handles requests for a single dish
+router.get("/dish/:num", async (req, res) => {
+  return res.render("dish", dishes[req.params.num - 1]);
+})
+
+// router.get("/dish/:num", async (req, res) => {
+
+//   return res.render("dish", dishes[req.params.num - 1]);
+// });
 
 module.exports = router;

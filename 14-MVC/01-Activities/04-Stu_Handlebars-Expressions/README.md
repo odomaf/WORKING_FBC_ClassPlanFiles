@@ -1,34 +1,36 @@
 # 🏗️ Implement a GET Route for Food Item Descriptions
 
-Work with a group to implement the following user story:
+Work with your group to implement the following user story:
 
-* As a party guest, I want to see a description of one food item that will be at the potluck when I visit `http://localhost:3001/dish/:num`.
+- As a site visitor, I want to view the description of a single food item when I visit  
+  `http://localhost:3001/dish/:num`.
 
 ## Acceptance Criteria
 
-* It's done when the route called `/dish/:num` is properly configured to retrieve and return a food item and its description.
-
-* It's done when the view displays a description for the food item, where the list number matches the route `/dish/:num`.
+- The `/dish/:num` route is configured to retrieve the correct food item based on the route parameter.
+- The route passes the selected food item to a Handlebars view.
+- The view displays the food item’s name and description.
+- The food item shown matches the number provided in the URL.
 
 ## Assets
 
-The following image demonstrates the web application's appearance and functionality:
+The following image demonstrates the expected behavior of the application:
 
-![A webpage with the header "Potluck Party!" displays the name and description for a Pork Gyoza dish.](images/dish-description.png)
+![A webpage displays the name and description for a single food item.](images/dish-description.png)
 
 ---
 
 ## 💡 Hints
 
-How can you ensure that the correct Handlebars.js template is rendered?
+- Which controller file is responsible for handling this route?
+- How do you pass data from a route into a Handlebars template?
+- How can you ensure the correct template is rendered for this page?
 
 ## 🏆 Bonus
 
-If you have completed this activity, work through the following challenge with your group to further your knowledge:
+If you complete the core requirements, explore the following:
 
-* How can we render an array of objects using Handlebars.js?
+- How can an array of food items be rendered dynamically using Handlebars?
+- What Handlebars features help avoid repeating markup?
 
-Use [Google](https://www.google.com) or another search engine to research this.
-
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Use a search engine or official documentation to research these concepts.
