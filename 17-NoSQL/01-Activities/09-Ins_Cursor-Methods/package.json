@@ -1,0 +1,14 @@
+{
+  "name": "mongo-cursor-methods-ins",
+  "version": "1.0.0",
+  "description": "Unit 17 Instructor Demo - MongoDB cursor methods: sort, skip, limit",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^6.4.0"
+  }
+}

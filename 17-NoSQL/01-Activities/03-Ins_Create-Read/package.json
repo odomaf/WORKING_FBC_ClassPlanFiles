@@ -1,0 +1,14 @@
+{
+  "name": "mongo-create-read",
+  "version": "1.0.0",
+  "description": "Unit 17 - MongoDB Create + Read demo using Express and the MongoDB Node driver",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^6.4.0"
+  }
+}

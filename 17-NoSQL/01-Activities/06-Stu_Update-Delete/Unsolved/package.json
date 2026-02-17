@@ -1,0 +1,14 @@
+{
+  "name": "mongo-update-delete-stu",
+  "version": "1.0.0",
+  "description": "Unit 17 - Student Activity - MongoDB Update & Delete with Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongodb": "^6.4.0"
+  }
+}
