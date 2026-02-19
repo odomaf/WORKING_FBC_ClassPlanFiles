@@ -57,6 +57,8 @@ app.get("/books", (req, res) => {
  *      - else -> "No document found"
  */
 app.delete("/books/:id", (req, res) => {
-  // TODO: Implement me
-  res.status(501).json({ message: "Not implemented" });
+  db.collection("bookCollection")
+    .deleteOne({ _id: new ObjectId(req.params.id) }) 
+    .then((result) => res.json(result))
+    .catch((err) => res.status(500).json({ error: err.message }));
 });

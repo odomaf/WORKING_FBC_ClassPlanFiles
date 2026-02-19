@@ -40,7 +40,11 @@ app.use(express.json());
 // Post request to create a single document to collection
 app.post("/books", (req, res) => {
   db.collection("bookCollection")
-    .insertOne({ title: req.body.title, author: req.body.author })
+    .insertOne({
+      title: req.body.title,
+      author: req.body.author,
+      category: req.body.category,
+    })
     .then((results) => res.json(results))
     .catch((err) => {
       if (err) throw err;
