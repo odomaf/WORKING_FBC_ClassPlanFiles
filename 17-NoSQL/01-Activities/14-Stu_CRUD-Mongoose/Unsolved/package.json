@@ -1,0 +1,14 @@
+{
+  "name": "mongoose-crud-update-stu",
+  "version": "1.0.0",
+  "description": "Unit 17 - Student Activity - CRUD with Mongoose (implement PUT update route)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^8.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "23-ins-populate-users-posts",
+  "version": "1.0.0",
+  "description": "Mongoose virtuals + populate (Users + Posts)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node utils/seed.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^8.0.0"
+  }
+}

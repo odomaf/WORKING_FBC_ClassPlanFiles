@@ -69,7 +69,7 @@ seedDBAndStartServer();
  */
 app.get("/books/price-under-10", (req, res) => {
   db.collection("bookInventory")
-    .find({ price: { $lt: 10 } }) // ❌ Incorrect: price is inside information object
+    .find({ "information.price": { $lt: 10 } }) // ❌ Incorrect: price is inside information object
     .toArray()
     .then((results) => res.json(results))
     .catch((err) => res.status(500).json({ error: err.message }));
@@ -81,7 +81,7 @@ app.get("/books/price-under-10", (req, res) => {
  */
 app.get("/books/featured", (req, res) => {
   db.collection("bookInventory")
-    .find({ featured: true }) // ❌ Incorrect: featured is inside authors array
+    .find({ 'authors.featured': true }) // ❌ Incorrect: featured is inside authors array
     .toArray()
     .then((results) => res.json(results))
     .catch((err) => res.status(500).json({ error: err.message }));

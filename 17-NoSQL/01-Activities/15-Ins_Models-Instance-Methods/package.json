@@ -1,0 +1,13 @@
+{
+  "name": "mongoose-instance-methods-ins",
+  "version": "1.0.0",
+  "description": "Unit 17 Instructor Demo - Mongoose model instance methods",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.0.0"
+  }
+}

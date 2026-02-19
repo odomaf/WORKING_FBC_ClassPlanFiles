@@ -62,9 +62,9 @@ seedDBAndStartServer();
 app.get("/numbers", (req, res) => {
   db.collection("numberList")
     .find()
-    // TODO: Add .sort({ number: -1 })
-    // TODO: Add .skip(5)
-    // TODO: Add .limit(5)
+    .sort({ number: -1 })
+    .skip(5)
+    .limit(5)
     .toArray()
     .then((results) => res.json(results))
     .catch((err) => res.status(500).json({ error: err.message }));

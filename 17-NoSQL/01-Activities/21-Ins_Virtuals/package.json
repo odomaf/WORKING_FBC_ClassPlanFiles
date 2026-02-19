@@ -1,0 +1,15 @@
+{
+  "name": "nosql-posts-comments-api",
+  "version": "1.0.0",
+  "description": "Express + MongoDB + Mongoose demo with posts, comments, refs, and virtuals",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node utils/seed.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^8.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "24-stu-subdoc-population",
+  "version": "1.0.0",
+  "description": "Debugging Mongoose populate with Tag references",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node utils/seed.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^8.0.0"
+  }
+}

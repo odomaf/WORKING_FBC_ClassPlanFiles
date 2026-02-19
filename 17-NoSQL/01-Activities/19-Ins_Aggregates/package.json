@@ -1,0 +1,14 @@
+{
+  "name": "mongoose-aggregates-ins",
+  "version": "1.0.0",
+  "description": "Unit 17 Instructor Demo - Aggregation pipelines with Mongoose",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^8.0.0"
+  }
+}
