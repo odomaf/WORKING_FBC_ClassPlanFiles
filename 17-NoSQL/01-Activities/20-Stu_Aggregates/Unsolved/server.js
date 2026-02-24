@@ -39,7 +39,7 @@ app.get("/books/price-summary", async (req, res) => {
   try {
     const summary = await Book.aggregate([
       // TODO: Add a pipeline stage here to filter only in-stock books
-
+      { $match: { inStock: true } },
       {
         $group: {
           _id: null,

@@ -1,0 +1,8 @@
+.form {
+  max-width: 420px;
+}
+
+.error-text {
+  color: #b00020;
+  font-weight: 600;
+}
