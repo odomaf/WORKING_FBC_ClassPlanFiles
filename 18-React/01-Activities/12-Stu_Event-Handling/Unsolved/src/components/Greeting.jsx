@@ -15,23 +15,26 @@ function Greeting() {
         */}
 
         <button
-          onClick={welcomeStudent("Avery")}
+          onClick={() => welcomeStudent("Avery")}
           className="list-group-item list-group-item-action"
-          type="button">
+          type="button"
+        >
           Avery
         </button>
 
         <button
-          onClick={welcomeStudent("Jordan")}
+          onClick={() => welcomeStudent("Jordan")}
           className="list-group-item list-group-item-action"
-          type="button">
+          type="button"
+        >
           Jordan
         </button>
 
         <button
-          onClick={welcomeStudent("Kai")}
+          onClick={() => welcomeStudent("Kai")}
           className="list-group-item list-group-item-action"
-          type="button">
+          type="button"
+        >
           Kai
         </button>
       </div>

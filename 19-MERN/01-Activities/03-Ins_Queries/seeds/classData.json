@@ -1,0 +1,52 @@
+[
+  {
+    "name": "JavaScript Deep Dive (ES6+)",
+    "building": "CORE",
+    "creditHours": 4
+  },
+  {
+    "name": "React Fundamentals & Component Patterns",
+    "building": "FRONTEND",
+    "creditHours": 4
+  },
+  {
+    "name": "State Management & Performance Optimization",
+    "building": "FRONTEND",
+    "creditHours": 3
+  },
+  {
+    "name": "Node.js & REST API Development",
+    "building": "BACKEND",
+    "creditHours": 4
+  },
+  {
+    "name": "MongoDB & Real-World Data Modeling",
+    "building": "DATABASE",
+    "creditHours": 3
+  },
+  {
+    "name": "GraphQL with Apollo Server",
+    "building": "API",
+    "creditHours": 3
+  },
+  {
+    "name": "Authentication, JWT & Role-Based Access",
+    "building": "SECURITY",
+    "creditHours": 3
+  },
+  {
+    "name": "Testing & Debugging Modern Applications",
+    "building": "QA",
+    "creditHours": 3
+  },
+  {
+    "name": "CI/CD with GitHub Actions",
+    "building": "DEVOPS",
+    "creditHours": 2
+  },
+  {
+    "name": "Capstone: Production-Ready MERN App",
+    "building": "CAPSTONE",
+    "creditHours": 5
+  }
+]

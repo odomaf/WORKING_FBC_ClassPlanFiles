@@ -24,10 +24,10 @@ const OmdbContainer = () => {
   // Hint: useEffect takes a second argument called the dependency array.
   useEffect(() => {
     searchMovie("The Matrix");
-  });
+  }, []);
 
   // TODO 2: Fix handleInputChange so typing updates the `search` state
-  const handleInputChange = (e) => console.log(e.target.value);
+  const handleInputChange = (e) => setSearch(e.target.value);
 
   // TODO 3: Fix handleFormSubmit so it actually searches for the movie
   // Requirements:
@@ -37,6 +37,7 @@ const OmdbContainer = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     setSearch(e.target.value);
+    searchMovie(search);
   };
 
   const {

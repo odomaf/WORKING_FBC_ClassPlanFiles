@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Avery Martinez",
+    "studentScore": 9.4,
+    "officeHours": "9:00 AM",
+    "officeLocation": "Zoom-Room-1"
+  },
+  {
+    "name": "Jordan Nelson",
+    "studentScore": 9.1,
+    "officeHours": "11:30 AM",
+    "officeLocation": "Slack-Huddle"
+  },
+  {
+    "name": "Taylor Nguyen",
+    "studentScore": 8.9,
+    "officeHours": "2:00 PM",
+    "officeLocation": "Discord-Stage"
+  },
+  {
+    "name": "Morgan Patel",
+    "studentScore": 9.3,
+    "officeHours": "3:30 PM",
+    "officeLocation": "Zoom-Room-2"
+  },
+  {
+    "name": "Riley Thompson",
+    "studentScore": 8.7,
+    "officeHours": "6:00 PM",
+    "officeLocation": "Virtual-Office"
+  }
+]

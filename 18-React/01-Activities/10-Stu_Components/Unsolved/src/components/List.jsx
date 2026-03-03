@@ -3,14 +3,14 @@
 export default function List(props) {
   return (
     <div className="container">
-      <h1>User List</h1>
+      <h1>Grocery List</h1>
 
       <ul className="list-group">
-        {/* TODO:
-            Use the map() method to loop over the users array.
-            Render one <li> for each user.
-            Make sure each <li> includes a unique key.
-        */}
+        {props.groceries.map((item) => (
+          <li className="list-group-item" key={item.id}>
+            {item.name}
+          </li>
+        ))}
       </ul>
     </div>
   );

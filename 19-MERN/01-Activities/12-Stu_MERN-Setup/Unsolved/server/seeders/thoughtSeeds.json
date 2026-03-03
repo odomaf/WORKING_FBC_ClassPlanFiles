@@ -1,0 +1,42 @@
+[
+  {
+    "thoughtText": "If your resolver works but your UI doesn't update, you're not done yet.",
+    "thoughtAuthor": "Morgan Patel"
+  },
+  {
+    "thoughtText": "The fastest way to debug GraphQL is to read the schema first.",
+    "thoughtAuthor": "Jordan Nelson"
+  },
+  {
+    "thoughtText": "Full-stack developers don’t memorize everything — they understand how the layers connect.",
+    "thoughtAuthor": "Drew Carter"
+  },
+  {
+    "thoughtText": "If your mutation returns stale data, your database probably isn’t the problem — your options are.",
+    "thoughtAuthor": "Taylor Nguyen"
+  },
+  {
+    "thoughtText": "Ship small. Ship often. Optimize later.",
+    "thoughtAuthor": "Riley Thompson"
+  },
+  {
+    "thoughtText": "Your frontend isn’t broken. It’s just waiting for the right data shape.",
+    "thoughtAuthor": "Avery Martinez"
+  },
+  {
+    "thoughtText": "GraphQL doesn’t reduce complexity. It moves it into the schema.",
+    "thoughtAuthor": "Skyler Brooks"
+  },
+  {
+    "thoughtText": "Clean commits are a love letter to your future self.",
+    "thoughtAuthor": "Casey Johnson"
+  },
+  {
+    "thoughtText": "If you can explain the request flow from browser to database, you're hireable.",
+    "thoughtAuthor": "Cameron Lee"
+  },
+  {
+    "thoughtText": "Think. Build. Launch. Then refactor.",
+    "thoughtAuthor": "Quinn Alvarez"
+  }
+]

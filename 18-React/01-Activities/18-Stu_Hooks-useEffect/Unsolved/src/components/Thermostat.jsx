@@ -1,13 +1,16 @@
 // Import `useEffect` Hook from React
+import { useEffect } from 'react';
 import { useState } from 'react';
 
 function Thermostat() {
   // Set the starting temperature
-  const [temp, setTemp] = useState(0);
+  const [temp, setTemp] = useState(72);
 
   // TODO: Use the `useEffect` Hook to set the `document.title` to the current temperature
   // YOUR CODE HERE
-  //
+  useEffect(() => {
+      document.title = `Current temp ${temp}`;
+    }, [temp]);
 
   // Handler for increasing the temp by 1
   const increaseTemp = () => {

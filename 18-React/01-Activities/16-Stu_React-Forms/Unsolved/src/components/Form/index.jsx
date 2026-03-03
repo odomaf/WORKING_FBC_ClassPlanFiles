@@ -24,7 +24,8 @@ export default function Form() {
 
     // TODO 1: Wire up the password input
     // - When name is "password", update password state
-    // if (name === "password") return setPassword(value);
+    if (name === "password") return setPassword(value);
+
   };
 
   const handleFormSubmit = (event) => {
@@ -37,24 +38,37 @@ export default function Form() {
     // If email/username/password is missing:
     // setErrorMessage("All fields are required.");
     // return;
+    //Simple validation example
+    if (!email || !username || !password) {
+      return setErrorMessage("Please fill out all fields");
+    }
 
     // TODO 3: Validate email format
     // If validateEmail(email) is false:
     // setErrorMessage("Please enter a valid email address.");
     // return;
+    if (!validateEmail(email)) {
+      return setErrorMessage("Please enter valid email address");
+    }
 
     // TODO 4: Validate password strength
     // If checkPassword(password) is false:
     // setErrorMessage("Password must be 8–15 chars and only use letters, numbers, and underscores.");
     // return;
+    if (!checkPassword) {
+      return setErrorMessage(
+        "Password must be 8–15 chars and only use letters, numbers, and underscores.",
+      );
+    }
 
     // If everything is valid:
     alert(`Welcome, ${username}!`);
 
     // TODO 5: Clear all fields after successful submit
-    // setEmail("");
-    // setUsername("");
-    // setPassword("");
+    setEmail("");
+    setUsername("");
+    setPassword("");
+    setErrorMessage("");
   };
 
   return (
@@ -106,6 +120,22 @@ export default function Form() {
             - placeholder="Password"
             - autoComplete="new-password" (nice bonus)
         */}
+
+        <div className="mb-3 text-start">
+          <label className="form-label" htmlFor="password">
+            Password
+          </label>
+          <input
+            id="password"
+            className="form-control"
+            value={password}
+            name="password"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="pilotCoder99"
+            autoComplete="password"
+          />
+        </div>
 
         <button
           className="btn btn-primary w-100"

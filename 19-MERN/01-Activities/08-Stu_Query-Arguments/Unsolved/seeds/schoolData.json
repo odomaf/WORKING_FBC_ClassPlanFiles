@@ -1,0 +1,17 @@
+[
+  {
+    "name": "CodeAcademy Bootcamp",
+    "location": "Remote-First",
+    "studentCount": 1200
+  },
+  {
+    "name": "FullStack Forge",
+    "location": "Austin Tech Hub",
+    "studentCount": 850
+  },
+  {
+    "name": "GraphQL Guild",
+    "location": "Virtual Campus",
+    "studentCount": 600
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Avery Martinez",
+    "skills": [
+      "React",
+      "Component Architecture",
+      "Performance Optimization",
+      "Frontend Testing",
+      "Vite"
+    ]
+  },
+  {
+    "name": "Jordan Nelson",
+    "skills": [
+      "Node.js",
+      "Express",
+      "REST APIs",
+      "Authentication (JWT)",
+      "Role-Based Access Control"
+    ]
+  },
+  {
+    "name": "Taylor Nguyen",
+    "skills": [
+      "MongoDB",
+      "Mongoose",
+      "Data Modeling",
+      "Aggregation Pipelines",
+      "Index Optimization"
+    ]
+  },
+  {
+    "name": "Morgan Patel",
+    "skills": [
+      "GraphQL",
+      "Apollo Server",
+      "Schema Design",
+      "Resolver Architecture",
+      "Query Optimization"
+    ]
+  },
+  {
+    "name": "Riley Thompson",
+    "skills": [
+      "CI/CD",
+      "GitHub Actions",
+      "Docker Basics",
+      "Deployment Pipelines",
+      "Environment Configuration"
+    ]
+  },
+  {
+    "name": "Casey Johnson",
+    "skills": [
+      "Testing Strategy",
+      "Jest",
+      "Integration Testing",
+      "Debugging",
+      "Code Reviews"
+    ]
+  },
+  {
+    "name": "Drew Carter",
+    "skills": [
+      "System Design",
+      "API Architecture",
+      "Scalability Concepts",
+      "Caching Strategies",
+      "Security Best Practices"
+    ]
+  },
+  {
+    "name": "Skyler Brooks",
+    "skills": [
+      "TypeScript",
+      "Refactoring",
+      "Clean Code",
+      "Design Patterns",
+      "Developer Experience"
+    ]
+  },
+  {
+    "name": "Quinn Alvarez",
+    "skills": [
+      "Frontend State Management",
+      "Context API",
+      "React Hooks",
+      "Accessibility",
+      "UI Performance"
+    ]
+  },
+  {
+    "name": "Cameron Lee",
+    "skills": [
+      "Full-Stack Integration",
+      "MERN Architecture",
+      "Capstone Mentorship",
+      "Code Deployment",
+      "Technical Interview Prep"
+    ]
+  }
+]

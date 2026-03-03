@@ -1,0 +1,52 @@
+[
+  {
+    "username": "Avery Martinez",
+    "email": "avery@codeacademy.dev",
+    "password": "Password1234!"
+  },
+  {
+    "username": "Jordan Nelson",
+    "email": "jordan@codeacademy.dev",
+    "password": "Password1234!"
+  },
+  {
+    "username": "Taylor Nguyen",
+    "email": "taylor@codeacademy.dev",
+    "password": "Password1234!"
+  },
+  {
+    "username": "Morgan Patel",
+    "email": "morgan@codeacademy.dev",
+    "password": "Password1234!"
+  },
+  {
+    "username": "Riley Thompson",
+    "email": "riley@codeacademy.dev",
+    "password": "Password1234!"
+  },
+  {
+    "username": "Casey Johnson",
+    "email": "casey@codeacademy.dev",
+    "password": "Password1234!"
+  },
+  {
+    "username": "Drew Carter",
+    "email": "drew@codeacademy.dev",
+    "password": "Password1234!"
+  },
+  {
+    "username": "Skyler Brooks",
+    "email": "skyler@codeacademy.dev",
+    "password": "Password1234!"
+  },
+  {
+    "username": "Quinn Alvarez",
+    "email": "quinn@codeacademy.dev",
+    "password": "Password1234!"
+  },
+  {
+    "username": "Cameron Lee",
+    "email": "cameron@codeacademy.dev",
+    "password": "Password1234!"
+  }
+]

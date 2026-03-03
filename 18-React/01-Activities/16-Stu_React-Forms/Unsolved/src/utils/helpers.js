@@ -10,3 +10,7 @@ export function checkPassword(input) {
   }
   return false;
 }
+
+export function checkForBlanks(input) {
+
+}
