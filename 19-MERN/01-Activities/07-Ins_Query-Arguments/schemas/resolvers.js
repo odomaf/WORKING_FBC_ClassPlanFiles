@@ -13,8 +13,11 @@ const resolvers = {
     },
     professors: async () => {
       return await Professor.find({}).populate('classes');
+    },
+    class: async (parent, { id }) => {
+      return await Class.findById(id).populate('professor');
     }
   }
-};
+}
 
 module.exports = resolvers;
