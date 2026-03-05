@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Jordan Nelson",
+    "email": "jordan.nelson@codeacademy.dev",
+    "password": "Password1234!",
+    "skills": ["React", "Node.js", "MongoDB", "GraphQL", "REST APIs"]
+  },
+  {
+    "name": "Avery Smith",
+    "email": "avery.smith@codeacademy.dev",
+    "password": "Password1234!",
+    "skills": ["TypeScript", "Next.js", "TailwindCSS", "UI/UX", "Figma"]
+  },
+  {
+    "name": "Marcus Chen",
+    "email": "marcus.chen@codeacademy.dev",
+    "password": "Password1234!",
+    "skills": ["PostgreSQL", "Sequelize", "Database Design", "SQL Optimization"]
+  },
+  {
+    "name": "Sofia Ramirez",
+    "email": "sofia.ramirez@codeacademy.dev",
+    "password": "Password1234!",
+    "skills": ["JWT Authentication", "Apollo Server", "Express Middleware"]
+  },
+  {
+    "name": "Liam Patel",
+    "email": "liam.patel@codeacademy.dev",
+    "password": "Password1234!",
+    "skills": ["DevOps Basics", "Docker", "CI/CD", "GitHub Actions"]
+  },
+  {
+    "name": "Noah Kim",
+    "email": "noah.kim@codeacademy.dev",
+    "password": "Password1234!",
+    "skills": ["Testing", "Jest", "Vitest", "TDD", "Debugging"]
+  },
+  {
+    "name": "Isabella Nguyen",
+    "email": "isabella.nguyen@codeacademy.dev",
+    "password": "Password1234!",
+    "skills": ["System Design", "Microservices", "API Architecture"]
+  },
+  {
+    "name": "Ethan Walker",
+    "email": "ethan.walker@codeacademy.dev",
+    "password": "Password1234!",
+    "skills": ["React Router", "State Management", "Performance Optimization"]
+  },
+  {
+    "name": "Maya Thompson",
+    "email": "maya.thompson@codeacademy.dev",
+    "password": "Password1234!",
+    "skills": ["Security Fundamentals", "OAuth", "Session Management"]
+  },
+  {
+    "name": "Daniel Brooks",
+    "email": "daniel.brooks@codeacademy.dev",
+    "password": "Password1234!",
+    "skills": ["Full-Stack Integration", "MERN Deployment", "Render", "Netlify"]
+  }
+]

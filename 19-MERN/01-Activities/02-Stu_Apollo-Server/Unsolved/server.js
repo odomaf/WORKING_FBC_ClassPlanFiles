@@ -2,6 +2,7 @@ const express = require("express");
 
 // TODO: Explain what ApolloServer is responsible for in a GraphQL application.
 // What problem does it solve?
+//improve performance and scalability of GraphQL APIs by providing a robust and flexible server implementation that can handle complex queries, manage data fetching, and integrate with various data sources.  
 const { ApolloServer } = require("@apollo/server");
 
 // TODO: Explain what expressMiddleware does.

@@ -1,100 +1,113 @@
 /**
- * seeds/index.js
- * ------------------------------------------------------------
+ * server.js
+ * -------------------------------------------------------------
  * CodeAcademy – Unit 19 (MERN + GraphQL)
  *
  * PURPOSE:
- * This script "seeds" (loads) demo data into MongoDB so we have
- * something to query in GraphQL right away.
+ * This file bootstraps our entire backend application.
  *
- * WHAT IT DOES (high-level):
- * 1) Connects to MongoDB
- * 2) Wipes the target collections (clean slate)
- * 3) Inserts Schools, Classes, and Professors from JSON files
- * 4) Creates relationships:
- *    - Each Class is assigned to a random School
- *    - Each Class is assigned a random Professor
- *    - Each Professor also stores a reference to the Classes they teach
+ * It:
+ * 1) Creates an Express server
+ * 2) Creates an Apollo GraphQL server
+ * 3) Connects both together
+ * 4) Waits for MongoDB to connect
+ * 5) Starts listening for incoming requests
  *
- * WHY THIS MATTERS:
- * In GraphQL, relationships are everything. Seed data with references
- * makes it easy to demo nested queries like:
- * - school { classes { professor { name } } }
- * - professor { classes { name } }
+ * Big Picture Flow:
+ * Client → Express → Apollo → Resolvers → MongoDB
  */
 
-const db = require("./config/connection");
-const { School, Class, Professor } = require("./models");
-const cleanDB = require("./seeds/cleanDB");
+// Import Express (HTTP server framework)
+const express = require("express");
 
-// JSON seed data (simple objects: no Mongo IDs yet)
-const schoolData = require("./seeds/schoolData.json");
-const classData = require("./seeds/classData.json");
-const professorData = require("./seeds/professorData.json");
+// Import Apollo Server (GraphQL engine)
+// ApolloServer handles GraphQL queries & mutations
+// expressMiddleware allows Apollo to plug into Express
+const { ApolloServer } = require("@apollo/server");
+const { expressMiddleware } = require("@apollo/server/express4");
+
+// Import the GraphQL schema pieces
+// typeDefs = the structure of our API (schema)
+// resolvers = the logic that runs when queries/mutations are executed
+const { typeDefs, resolvers } = require("./schemas");
+
+// Import MongoDB connection (Mongoose connection instance)
+const db = require("./config/connection");
+
+// Define the port our server will run on
+// Uses environment variable if deployed, otherwise defaults to 3001
+const PORT = process.env.PORT || 3001;
 
 /**
- * NOTE:
- * db.once('open') waits until Mongoose has connected to the database.
- * Only then do we run the seed steps (clean -> create -> link).
+ * Create a new Apollo Server instance.
+ *
+ * typeDefs → define what clients are allowed to ask for
+ * resolvers → define how we fetch or modify the data
+ *
+ * Apollo does NOT start immediately.
+ * We must call server.start() later.
  */
-db.once("open", async () => {
-  try {
-    // ------------------------------------------------------------
-    // 1) CLEAN DATABASE (wipe existing data so the seed is repeatable)
-    // ------------------------------------------------------------
-    // cleanDB(modelName, collectionName)
-    // The collection name must match the actual Mongo collection.
-    await cleanDB("School", "schools");
-    await cleanDB("Class", "classes");
-    await cleanDB("Professor", "professors");
-
-    // ------------------------------------------------------------
-    // 2) INSERT BASE DOCUMENTS
-    // ------------------------------------------------------------
-    // These create() calls return arrays of newly created documents.
-    // At this point, there are NO relationships yet.
-    const schools = await School.create(schoolData);
-    const classes = await Class.create(classData);
-    const professors = await Professor.create(professorData);
-
-    // ------------------------------------------------------------
-    // 3) BUILD RELATIONSHIPS (random assignments)
-    // ------------------------------------------------------------
-    // For each class:
-    // - pick a random school and add this class ID to that school's `classes` array
-    // - pick a random professor and set class.professor = professor ID
-    // - also add this class ID to professor.classes (two-way reference)
-    //
-    // This creates realistic nested query behavior in GraphQL.
-    for (const newClass of classes) {
-      // --- A) Assign class to a random school (School -> Classes)
-      const tempSchool = schools[Math.floor(Math.random() * schools.length)];
-
-      // `classes` is an array of ObjectIds on the School model
-      tempSchool.classes.push(newClass._id);
-      await tempSchool.save();
-
-      // --- B) Assign a random professor to this class (Class -> Professor)
-      const tempProfessor =
-        professors[Math.floor(Math.random() * professors.length)];
-
-      // `professor` is an ObjectId field on the Class model
-      newClass.professor = tempProfessor._id;
-      await newClass.save();
-
-      // --- C) Add class reference on the professor side too (Professor -> Classes)
-      // This makes it easy to query "what classes does this professor teach?"
-      tempProfessor.classes.push(newClass._id);
-      await tempProfessor.save();
-    }
-
-    console.log(
-      "✅ Seed complete: schools, classes, and professors are loaded.",
-    );
-    process.exit(0);
-  } catch (err) {
-    // If anything fails, log it clearly and exit with a non-zero status code
-    console.error("❌ Seed failed:", err);
-    process.exit(1);
-  }
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
 });
+
+// Create the Express application
+const app = express();
+
+/**
+ * This async function initializes and starts everything.
+ *
+ * Why async?
+ * Because Apollo's server.start() is asynchronous.
+ */
+const startApolloServer = async () => {
+  // Start the Apollo GraphQL engine
+  // Must be called before applying middleware
+  await server.start();
+
+  /**
+   * Middleware Section
+   * -------------------------------------------------------------
+   * Middleware runs before routes execute.
+   */
+
+  // Parse URL-encoded form data
+  app.use(express.urlencoded({ extended: false }));
+
+  // Parse incoming JSON requests
+  // GraphQL requests are sent as JSON
+  app.use(express.json());
+
+  /**
+   * Mount Apollo middleware at /graphql
+   *
+   * This means:
+   * Any request sent to /graphql
+   * will be handled by Apollo instead of a normal REST route.
+   *
+   * Example:
+   * POST http://localhost:3001/graphql
+   */
+  app.use("/graphql", expressMiddleware(server));
+
+  /**
+   * Wait for MongoDB connection before starting server.
+   *
+   * This ensures:
+   * - The database is ready
+   * - Resolvers can access data safely
+   */
+  db.once("open", () => {
+    // Start Express server
+    app.listen(PORT, () => {
+      console.log(`🚀 API server running on port ${PORT}!`);
+      console.log(
+        `📊 GraphQL endpoint available at http://localhost:${PORT}/graphql`,
+      );
+    });
+  });
+};
+
+// Call the function to start everything
+startApolloServer();
