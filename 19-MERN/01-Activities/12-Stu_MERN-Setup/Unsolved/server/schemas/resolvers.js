@@ -1,25 +1,26 @@
-const { Thought } = require('../models');
+const { Profile } = require('../models');
 
 const resolvers = {
+  // Important for useQuery: The resolver matches the typeDefs entry point and informs the request of the relevant data
   Query: {
-    thoughts: async () => {
-      return Thought.find().sort({ createdAt: -1 });
+    profiles: async () => {
+      return Profile.find();
     },
 
-    thought: async (parent, { thoughtId }) => {
-      return Thought.findOne({ _id: thoughtId });
+    profile: async (parent, { profileId }) => {
+      return Profile.findOne({ _id: profileId });
     },
   },
 
   Mutation: {
-    addThought: async (parent, { thoughtText, thoughtAuthor }) => {
-      return Thought.create({ thoughtText, thoughtAuthor });
+    addProfile: async (parent, { name }) => {
+      return Profile.create({ name });
     },
-    addComment: async (parent, { thoughtId, commentText }) => {
-      return Thought.findOneAndUpdate(
-        { _id: thoughtId },
+    addSkill: async (parent, { profileId, skill }) => {
+      return Profile.findOneAndUpdate(
+        { _id: profileId },
         {
-          $addToSet: { comments: { commentText } },
+          $addToSet: { skills: skill },
         },
         {
           new: true,
@@ -27,13 +28,13 @@ const resolvers = {
         }
       );
     },
-    removeThought: async (parent, { thoughtId }) => {
-      return Thought.findOneAndDelete({ _id: thoughtId });
+    removeProfile: async (parent, { profileId }) => {
+      return Profile.findOneAndDelete({ _id: profileId });
     },
-    removeComment: async (parent, { thoughtId, commentId }) => {
-      return Thought.findOneAndUpdate(
-        { _id: thoughtId },
-        { $pull: { comments: { _id: commentId } } },
+    removeSkill: async (parent, { profileId, skill }) => {
+      return Profile.findOneAndUpdate(
+        { _id: profileId },
+        { $pull: { skills: skill } },
         { new: true }
       );
     },

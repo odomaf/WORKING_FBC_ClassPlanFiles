@@ -1,0 +1,88 @@
+/* =====================================================
+   GARAGE APP STYLING
+   -----------------------------------------------------
+   This styling gives our reducer demo a simple
+   "garage dashboard" look.
+===================================================== */
+
+body {
+  background-color: #f4f6f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main App Container */
+
+.app-wrapper {
+  max-width: 700px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+/* Page Title */
+
+.app-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Car Card */
+
+.car-card {
+  background: white;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-left: 6px solid #1b2b6b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Car Details */
+
+.car-details {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Buttons */
+
+.btn-remove {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-remove:hover {
+  background: #c0392b;
+}
+
+.btn-add {
+  background: #1b2b6b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.btn-add:hover {
+  background: #142053;
+}
+
+/* Form */
+
+.car-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.car-form input {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

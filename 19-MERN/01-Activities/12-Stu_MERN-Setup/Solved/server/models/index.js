@@ -1,3 +1,3 @@
-const Thought = require('./Thought');
+const Profile = require('./Profile');
 
-module.exports = { Thought };
+module.exports = { Profile };

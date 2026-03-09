@@ -1,28 +1,22 @@
 const typeDefs = `
-  type Thought {
-    _id: ID
-    thoughtText: String
-    thoughtAuthor: String
-    createdAt: String
-    comments: [Comment]!
-  }
+type Profile {
+  _id: ID
+  name: String
+  skills: [String]!
+}
 
-  type Comment {
-    _id: ID
-    commentText: String
-    createdAt: String
-  }
-
+  # The Query type is built-in to GraphQL, so we only need to extend it to include which kinds of information we plan to request in our application
+  # Important for useQuery: We define our Query type to inform our entry points
   type Query {
-    thoughts: [Thought]!
-    thought(thoughtId: ID!): Thought
+    profiles: [Profile]!
+    profile(profileId: ID!): Profile
   }
 
   type Mutation {
-    addThought(thoughtText: String!, thoughtAuthor: String!): Thought
-    addComment(thoughtId: ID!, commentText: String!): Thought
-    removeThought(thoughtId: ID!): Thought
-    removeComment(thoughtId: ID!, commentId: ID!): Thought
+    addProfile(name: String!): Profile
+    addSkill(profileId: ID!, skill: String!): Profile
+    removeProfile(profileId: ID!): Profile
+    removeSkill(profileId: ID!, skill: String!): Profile
   }
 `;
 

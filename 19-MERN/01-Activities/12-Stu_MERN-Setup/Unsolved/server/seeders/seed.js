@@ -1,13 +1,17 @@
 const db = require('../config/connection');
-const { Thought } = require('../models');
-const thoughtSeeds = require('./thoughtSeeds.json');
+const { Profile } = require('../models');
+const profileSeeds = require('./profileSeeds.json');
 const cleanDB = require('./cleanDB');
 
 db.once('open', async () => {
-  await cleanDB('Thought', 'thoughts');
+  try {
+    await cleanDB('Profile', 'profiles');
+    
+    await Profile.create(profileSeeds);
 
-  await Thought.create(thoughtSeeds);
-
-  console.log('all done!');
-  process.exit(0);
+    console.log('all done!');
+    process.exit(0);
+  } catch (err) {
+    throw err;
+  }
 });
